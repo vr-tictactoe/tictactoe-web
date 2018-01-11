@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 
 export default class JoinRoom extends Component {
   handleButton (e) {
-    console.log(e.target.id);
+    console.log(e);
   }
 
   render () {
+    let looptest = [1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1]
     return (
-      <div>
+      <div className='col-md-8 offset-md-2'>
         <h1>Join Room</h1>
-        <div className="btn-group-vertical" data-toggle="buttons">
-          <button type="button" className="btn btn-primary" aria-pressed="true" id="1" onClick={(event)=> this.handleButton(event)}>Button</button>
-          <button type="button" className="btn btn-primary" aria-pressed="true" id="2" onClick={(event) => this.handleButton(event)}>Button</button>
-          <button type="button" className="btn btn-primary" aria-pressed="true" id="3" onClick={(event) => this.handleButton(event)}>Button</button>
-          <button type="button" className="btn btn-primary" aria-pressed="true" id="4" onClick={(event) => this.handleButton(event)}>Button</button>
-          <button type="button" className="btn btn-primary" aria-pressed="true" id="5" onClick={(event) => this.handleButton(event)}>Button</button>
-          <button type="button" className="btn btn-primary" aria-pressed="true" id="6" onClick={(event) => this.handleButton(event)}>Button</button>
+        <div className="list-room" data-toggle="buttons">
+          { 
+            looptest.map(tes => {
+              return <button type="button" className="join-list-btn v-button" onClick={(event)=> this.handleButton(event)}>Button</button>
+            })
+          }
         </div>
       </div>
     )

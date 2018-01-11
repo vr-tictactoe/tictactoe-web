@@ -18,7 +18,8 @@ body {
   src: url('./assets/font/Cuprum-Regular.ttf');
 }
 
-.logo {
+body h1 {
+  font-family: CuprumBold;
 }
 
 .login-page {
@@ -36,7 +37,7 @@ body {
   border-radius: 30px;
   border: none; 
   font-family: CuprumBold; 
-  font-size: 18px;
+  font-size: 20px;
   background: #fff;
   color: #306fd9;
   width: 220px;
@@ -66,10 +67,12 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
 }
 
 .play-button {
-  font-size: 20px;
   background-image: url('./assets/img/start.png');
   background-repeat: no-repeat;
   background-position: left;
@@ -83,11 +86,13 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
 }
 
 .history-button {
   margin-top: 10px;
-  font-size: 20px;
   background-image: url('./assets/img/history.png');
   background-repeat: no-repeat;
   background-position: left;
@@ -101,6 +106,9 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
 }
 
 .back-button {
@@ -120,6 +128,61 @@ body {
   background-image: url('./assets/img/back-white.png');
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+}
+
+.new-button {
+  background-image: url('./assets/img/new.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding-left: 40px;
+}
+
+.new-button:hover {
+  background-color: #306fd9;
+  transition: ease-in-out 0.3s;
+  background-image: url('./assets/img/new-white.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+}
+
+.join-button {
+  margin-top: 20px;
+  background-image: url('./assets/img/join.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding-left: 40px;
+}
+
+.join-button:hover {
+  background-color: #306fd9;
+  transition: ease-in-out 0.3s;
+  background-image: url('./assets/img/join-white.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+}
+
+.button-area {
+  margin-top: 50px;
+}
+
+.wrap-content {
+  margin-top: 30px;
+  padding: 40px 15px 50px 15px;
+}
+
+.wrap-content h1 {
+  font-size: 40px;
 }
 
 .footer {
@@ -131,4 +194,18 @@ body {
   color: #fff;
   padding: 2rem;
   text-align: center;
+}
+
+.list-room {
+  border-radius: 5px;
+  height: 300px;
+  flex: 1;
+  background-color: aquamarine;
+  overflow-y: scroll;
+}
+
+.join-list-btn {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 10px;
 }

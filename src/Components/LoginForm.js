@@ -15,7 +15,7 @@ export default class LoginForm extends Component {
     return (
       <div>
         <div className='col-md-6 offset-md-3 login-page'>
-          <img className='logo' src='./img/virtoe-logo.png' alt='logo'/>
+          <img className='logo' src='./assets/img/virtoe-logo.png' alt='logo'/>
           <div className='login-area'>
             <p style={{"font-family": "CuprumBold", fontSize: '30px'}}>LET'S PLAY THE GAME</p>
             { 
@@ -32,9 +32,6 @@ export default class LoginForm extends Component {
               </div>
             }
           </div>
-        </div>
-        <div className='footer'>
-          Get Ready for a New Experience of the TicTacToe Game
         </div>
       </div>
     )

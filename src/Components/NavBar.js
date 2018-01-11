@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router-dom';
+import Footer from './Footer'
 
 export default class NavBar extends Component {
   constructor (props) {
@@ -39,7 +40,9 @@ export default class NavBar extends Component {
             </form>
           </div>
         </nav>
-        {this.props.children}
+        <div>
+          {this.props.children}
+        </div>
       </div>
     )
   }

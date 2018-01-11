@@ -6,16 +6,13 @@ import {
 export default class PlayGame extends Component {
   render () {
     return (
-      <div>
-        <h1>Ar Ya Ready Kids?</h1>
-        <Link to="/login"><button type="button" className="btn btn-primary">I'm Ready Captain!</button></Link>
-        <h2>HISTORY</h2>
-        <div className="container">
-          <ol>
-            <li>Kesatu</li>
-            <li>Kedua</li>
-          </ol>
+      <div className='col-md-4 offset-md-4 wrap-content'>
+        <h1>Welcome To The Game</h1>
+        <div className='button-area'>
+          <Link to="/play/create"><button type="button" className="v-button new-button">NEW GAME</button></Link><br />
+          <Link to="/play/join"><button type="button" className="v-button join-button">JOIN ROOM</button></Link>
         </div>
+        {this.props.children}
       </div>
     )
   }
