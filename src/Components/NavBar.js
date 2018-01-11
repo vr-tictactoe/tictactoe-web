@@ -11,8 +11,15 @@ export default class NavBar extends Component {
     }
   }
 
-  loginHandle () {
-    this.setState({statusLogin: !this.state.statusLogin})
+  loginHandle (e) {
+    e.preventDefault()
+    this.setState({statusLogin: true})
+    console.log(this.state.statusLogin);
+  }
+
+  logoutHandle (e) {
+    e.preventDefault()
+    this.setState({statusLogin: false})
     console.log(this.state.statusLogin);
   }
 
@@ -34,8 +41,8 @@ export default class NavBar extends Component {
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            {!statusLogin ? <button className="btn btn-secondary my-2 my-sm-0" type="submit">Login</button>
-              : <button className="btn btn-secondary my-2 my-sm-0" type="submit">Logout</button>  
+            {!statusLogin ? <button className="btn btn-info my-2 my-sm-0" type="submit" onClick={this.loginHandle.bind(this)}>Login</button>
+              : <button className="btn btn-danger my-2 my-sm-0" type="submit" onClick={this.logoutHandle.bind(this)}>Logout</button>  
           }   
           </form>
         </div>
