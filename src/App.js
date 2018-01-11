@@ -17,8 +17,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path="/login" component={LoginForm} />
-          <Route path ="/newgame" component={NewGame} />
+          <Route exact path ="/" component={NewGame} />
+          <Route path ="/login" component={LoginForm} />
           <Route path ="/avatar" component={SelectAvatar} />
           <Route path ="/newgame/create-room" component={CreateRoom} />
           <Route path ="/newgame/join-room" component={JoinRoom} />
