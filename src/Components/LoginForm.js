@@ -4,15 +4,38 @@ import {
 } from 'react-router-dom';
 
 export default class LoginForm extends Component {
+  constructor() {
+    super()
+    this.state = {
+      play: false
+    }
+  }
+
   render() {
     return (
       <div>
-        <h1>Login First</h1>
-        <form>
-          <button type="button" className="btn btn-primary">Login With Facebook</button>
-          <button type="button" className="btn btn-info">Login With Google</button>
-        </form>
-        <Link to="/avatar">Select Avatar</Link>
+        <div className='col-md-6 offset-md-3 login-page'>
+          <img className='logo' src='./img/virtoe-logo.png' alt='logo'/>
+          <div className='login-area'>
+            <p style={{"font-family": "CuprumBold", fontSize: '30px'}}>LET'S PLAY THE GAME</p>
+            { 
+              this.state.play ? 
+              <div>
+                <button type="submit" className='v-button fb-button'>FACEBOOK LOGIN</button>
+                <p>Login with Facebook before Playing.</p>
+                <button onClick={() => this.setState({play: false})} className='back-button'></button>
+              </div>
+              :
+              <div>
+                <button onClick={() => this.setState({play: true})} type="submit" className='v-button play-button'>PLAY NOW</button><br />
+                <button type="submit" className='v-button history-button'>HISTORY</button>
+              </div>
+            }
+          </div>
+        </div>
+        <div className='footer'>
+          Get Ready for a New Experience of the TicTacToe Game
+        </div>
       </div>
     )
   }

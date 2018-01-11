@@ -14,18 +14,18 @@ import SelectAvatar from './Components/SelectAvatar';
 import NavBar from './Components/NavBar';
 import PlayGame from './Components/PlayGame';
 
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-        <NavBar />
-          <Route exact path ="/" component={PlayGame} />
-          <Route path ="/login" component={LoginForm} />
-          <Route path ="/avatar" component={SelectAvatar} />
-          <Route path ="/newgame" component={NewGame} />
-          <Route path ="/newgame/create-room" component={CreateRoom} />
-          <Route path ="/newgame/join-room" component={JoinRoom} />
+          <Route path ="/" component={LoginForm} />
+          {/* <Route exact path ="/" component={PlayGame} /> */}
+          <Route path ="/avatar" render={() => <NavBar><SelectAvatar/></NavBar>} />
+          <Route path ="/newgame" render={() => <NavBar><NewGame/></NavBar>} />
+          <Route path ="/newgame/create-room" render={() => <NavBar><CreateRoom/></NavBar>} />
+          <Route path ="/newgame/join-room" render={() => <NavBar><JoinRoom/></NavBar>} />
         </div>
       </Router>
     );
