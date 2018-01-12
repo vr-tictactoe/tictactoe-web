@@ -197,15 +197,37 @@ body h1 {
 }
 
 .list-room {
-  border-radius: 5px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
   height: 300px;
   flex: 1;
-  background-color: aquamarine;
+  background-color: rgba(5, 136, 221, 0.5);
   overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
 }
 
 .join-list-btn {
   flex-grow: 1;
   flex-wrap: wrap;
   margin: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 20px;
+}
+ 
+::-webkit-scrollbar-button {
+  display: none;
 }
