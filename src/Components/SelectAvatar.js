@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router-dom';
+import { db } from '../firebase.js'
+import firebase from 'firebase'
+import firebaseui from 'firebaseui';
+
 
 export default class SelectAvatar extends Component {
   constructor() {
@@ -20,6 +24,55 @@ export default class SelectAvatar extends Component {
       classAvatar2: 'avatar avatar-select'
     })
     console.log(this.state)
+  }
+
+  checkLogin() {
+    const self= this
+    firebase.auth().onAuthStateChanged(function(user){
+      console.log(user)
+      if(user){    
+        localStorage.setItem('uid', user.uid)
+        db.ref('users').orderByChild('uid').equalTo(user.uid).on('value',function(snapshot){
+          if(snapshot.val() === null){
+              const userData = {
+                uid: user.uid,
+                name: user.displayName,
+                email: user.email,
+                photoURL: user.photoURL,
+                totalPlay: 0,
+                win: 0,
+                lose: 0,
+                draw: 0,
+              }
+              db.ref('users').push(userData)
+                          
+              self.setState({
+                user: userData
+               })
+
+          }
+            snapshot.forEach(snap => {
+              let objUser = snapshot.val()[snap.key]
+              self.setState({
+                user: {
+                  uid: objUser.uid,
+                  name: objUser.name,
+                  email: objUser.email,
+                  photoURL: objUser.photoURL,
+                  totalPlay: objUser.totalPlay,
+                  win: objUser.win,
+                  lose: objUser.lose,
+                  draw: objUser.draw                  
+                }
+               })              
+            })
+         })
+      }
+    })
+  }
+
+  componentDidMount() {
+    this.checkLogin()
   }
 
   handleAvatar2() {

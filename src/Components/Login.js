@@ -34,60 +34,15 @@ export default class LoginButton extends Component {
 
   loadFirebaseAuth(){
     ui.start('#firebaseui-auth-container', uiConfig);
-  }  
-
-  checkLogin() {
-    const self= this
-    firebase.auth().onAuthStateChanged(function(user){
-      if(user){    
-        localStorage.setItem('uid', user.uid)
-        db.ref('users').orderByChild('uid').equalTo(user.uid).on('value',function(snapshot){
-          if(snapshot.val() === null){
-              const userData = {
-                uid: user.uid,
-                name: user.displayName,
-                email: user.email,
-                photoURL: user.photoURL,
-                totalPlay: 0,
-                win: 0,
-                lose: 0,
-                draw: 0,
-              }
-              db.ref('users').push(userData)
-                          
-              self.setState({
-                user: userData
-               })
-
-          }
-            snapshot.forEach(snap => {
-              let objUser = snapshot.val()[snap.key]
-              self.setState({
-                user: {
-                  uid: objUser.uid,
-                  name: objUser.name,
-                  email: objUser.email,
-                  photoURL: objUser.photoURL,
-                  totalPlay: objUser.totalPlay,
-                  win: objUser.win,
-                  lose: objUser.lose,
-                  draw: objUser.draw                  
-                }
-               })              
-            })
-         })
-      }
-    })
-  }    
+  }      
   
-  componentDidMount() {
-    this.loadFirebaseAuth()
-    this.checkLogin()
+  componentDidUpdate() {
+    console.log('masuk')
   }
 
-  // componentWillUnmount() {
-  //   ui.delete();
-  // }
+  componentDidMount() {
+    this.loadFirebaseAuth()
+  }
 
   render() {
     return (
