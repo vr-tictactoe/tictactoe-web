@@ -18,8 +18,7 @@ export default class JoinRoom extends Component {
             })
           }
         </div>
-        <br/>
-        <Link to="/play"><button onClick={() => this.setState({play: false})} className='back-button'></button></Link>
+        <Link to="/play"><button className='back-button'></button></Link>
       </div>
     )
   }
