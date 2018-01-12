@@ -28,27 +28,28 @@ class History extends Component {
 
   lookingHistory() {
     let history = this.state.allHistory
-    let win = this.state.winning
-    let obj = {
-      name: '',
-      totalWin: 0,
-      totalPlayed: 0
+    let winner = this.state.winning
+
+    let name = ''
+    for (let i = 0; i < history.length; i ++) {
+      console.log(history[i].winner);
+      if (name !== history[i].winner) {
+        let obj = {
+          name: history[i].winner,
+          totalWin: 1,
+          totalPlayed: 1
+        }
+        name = history[i].winner
+        winner.push(obj)
+      } else {
+        let idx = winner.findIndex(a => a.name === name)
+        winner[idx].totalPlayed++
+        winner[idx].totalWin++
+      }
     }
 
-    history.forEach(played => {
-      if (obj.name !== played.winner) {
-        win.push(obj)
-        obj.name = played.winner
-        obj.totalPlayed = 1
-        obj.totalWin = 1
-        console.log('cek pemenang',obj.name);
-      } else {
-        console.log('cek kemenangan', obj);
-        obj.totalPlayed++
-        obj.totalWin++
-      }
-    })
-    console.log('hasilnya', win);
+    
+    console.log('skor ', winner);
   }
 
   render () {
@@ -57,7 +58,9 @@ class History extends Component {
         {
           this.state.loading ? <h3> NOW LOADING... </h3>
             : <div><h1>Welldone</h1>
-              <button onClick={() => this.lookingHistory()}>Look Winner</button></div>
+              <button onClick={() => this.lookingHistory()}>Look Winner</button>
+              
+              </div>
         }
       </div>
     )
