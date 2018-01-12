@@ -28,7 +28,7 @@ export default class LoginForm extends Component {
               :
               <div>
                 <button onClick={() => this.setState({play: true})} type="submit" className='v-button play-button'>PLAY NOW</button><br />
-                <button type="submit" className='v-button history-button'>HISTORY</button>
+                <Link to='/history'><button type="submit" className='v-button history-button'>HISTORY</button></Link>
               </div>
             }
           </div>
