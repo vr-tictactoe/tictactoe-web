@@ -17,7 +17,7 @@ export default class CreateRoom extends Component {
   }
 
   handleInput(i) {
-    console.log(i.target)
+    
   }
 
   async createRoom () {
