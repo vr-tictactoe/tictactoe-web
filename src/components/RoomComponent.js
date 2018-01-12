@@ -33,12 +33,14 @@ class RoomComponent extends Component {
       winner: '',
       turn: this.state.player.uid,
     }
-    
+
     let Key = await db.ref('games').push(newGame).key
     this.setState({
       gameKeyDummy: Key
     })
-    this.props.history.push(`/game/${Key}`)
+
+    window.location.href = `http://localhost:8081/vr/?room=${Key}&player=${this.state.uid}`;
+    // this.props.history.push(`/game/${Key}`)
   }
 
   joinRoom(gameRoom) {
@@ -51,11 +53,13 @@ class RoomComponent extends Component {
             type: 'O',
           }
         })
-        this.props.history.push(`/game/${gameRoom}`)
+
+        window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
+        // this.props.history.push(`/game/${gameRoom}`)
       }else if(room.val().winner !== ''){
         alert('game already finished')
       }else if(room.val().player2.uid !== '' && room.val().winner === ''){
-        alert('game already Full')      
+        alert('game already Full')
       }
     })
   }
@@ -65,7 +69,7 @@ class RoomComponent extends Component {
       snaphotUser.forEach(snapUser => {
         this.state.player = snapUser.val()
       })
-    }) 
+    })
 
     db.ref('games').on('value', snapshot => {
       let allGames = []
@@ -83,8 +87,8 @@ class RoomComponent extends Component {
     return (
       <div>
       <button onClick={() => this.createRoom()}> Create Room </button>
-      {this.state.games.map((game,i) => {  
-        return(                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      {this.state.games.map((game,i) => {
+        return(
           <button key={i} onClick={() => this.joinRoom(game)}> Join Room {i}</button>
           )
       })}
