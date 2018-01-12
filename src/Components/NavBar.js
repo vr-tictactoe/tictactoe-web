@@ -31,12 +31,12 @@ export default class NavBar extends Component {
 
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+              <li className="form-inline nav-item active">
+                <img src='../assets/img/single-logo.png' alt='single-logo'/>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
-              {statusLogin && <button className="btn btn-danger my-2 my-sm-0" type="submit" onClick={this.logoutHandle.bind(this)}>Logout</button>}   
+              {statusLogin && <button className="v-button logout-button" type="submit" onClick={this.logoutHandle.bind(this)}>Logout</button>}   
             </form>
           </div>
         </nav>
