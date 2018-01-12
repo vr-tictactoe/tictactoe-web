@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
-import GameComponent from './components/GameComponent'
-import RoomComponent from './components/RoomComponent'
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 
+import './App.css';
+
+import PlayGame from './Components/PlayGame'
+import Welcome from './Components/Welcome'
+import CreateRoom from './Components/CreateRoom'
+import JoinRoom from './Components/JoinRoom'
+import SelectAvatar from './Components/SelectAvatar'
+import NavBar from './Components/NavBar'
+import Footer from './Components/Footer'
+import Login from './Components/Login'
 
 class App extends Component {
   render() {
-    return (     
+    return (
       <Router>
-      	<div className="App">
-      	<Route exact path='/' component={RoomComponent} />
-      	<Route exact path='/game/:gameId' render={(props) => <GameComponent {...props} /> }  />
-      	</div>
+        <div className="App">
+          <Route exact path ="/" component={Welcome} />
+          <Route path ="/login" component={Login} />
+          <Route path ="/avatar" render={() => <NavBar><SelectAvatar/></NavBar>} />
+          <Route exact path ="/play" render={() => <NavBar><PlayGame/></NavBar>} />
+          <Route path ="/play/create" render={() => <NavBar><CreateRoom/></NavBar>} />
+          <Route path ="/play/join" render={() => <NavBar><JoinRoom/></NavBar>} />
+          <Footer/> 
+        </div>
       </Router>
     );
   }
