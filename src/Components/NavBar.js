@@ -5,21 +5,11 @@ import {
 import Footer from './Footer'
 
 export default class NavBar extends Component {
-  constructor (props) {
-    super (props)
-    this.state ={
-      statusLogin: true
-    }
-  }
-
-  logoutHandle (e) {
-    e.preventDefault()
-    this.setState({statusLogin: false})
-    console.log(this.state.statusLogin);
+  logoutHandle() {
+    console.log('logout');
   }
 
   render () {
-    const statusLogin = this.state.statusLogin
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark">
@@ -35,9 +25,9 @@ export default class NavBar extends Component {
                 <img src='../assets/img/single-logo.png' alt='single-logo'/>
               </li>
             </ul>
-            <form className="form-inline my-2 my-lg-0">
-              {statusLogin && <button className="v-button logout-button" type="submit" onClick={this.logoutHandle.bind(this)}>Logout</button>}   
-            </form>
+            <div className="form-inline my-2 my-lg-0">
+              <button className="v-button logout-button" type="submit" onClick={() => this.logoutHandle()}>Logout</button> 
+            </div>
           </div>
         </nav>
         <div>
