@@ -3,10 +3,34 @@ import {
   Link
 } from 'react-router-dom';
 import Footer from './Footer'
+import firebase from 'firebase'
 
 export default class NavBar extends Component {
   logoutHandle() {
     console.log('logout');
+  }
+
+  logOut() {
+    const self=this
+    localStorage.clear()
+    firebase.auth().signOut().then(function() {
+      alert('success logout')
+      // self.setState({
+        //   user: {
+      //       uid: '',
+      //       name: '',
+      //       email: '',
+      //       photoURL: '',
+      //       totalPlay: '',
+      //       win: '',
+      //       lose: '',
+      //       draw: ''
+      //   }         
+      // })
+    }, function(error) {
+      alert('error')
+    });    
+    console.log(this.props)
   }
 
   render () {
@@ -26,7 +50,7 @@ export default class NavBar extends Component {
               </li>
             </ul>
             <div className="form-inline my-2 my-lg-0">
-              <button className="v-button logout-button" type="submit" onClick={() => this.logoutHandle()}>Logout</button> 
+              <Link to='/'><button className="v-button logout-button" type="submit" onClick={() => this.logOut()}>Logout</button></Link>
             </div>
           </div>
         </nav>
