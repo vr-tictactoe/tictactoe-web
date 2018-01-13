@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { db } from '../firebase.js'
+import firebase from 'firebase'
 
 export default class Welcome extends Component {
+
+  checkIsLogin() {
+    db.ref('users').orderByChild('uid').equalTo(localStorage.getItem('uid')).once('value', snaphotUser => {
+      console.log(snaphotUser.val())
+      if(snaphotUser.val() !== null){
+        this.props.history.push('/play')
+      }else{
+        this.props.history.push("/login")
+      }
+    }) 
+  }
+
   render() {
     return (
       <div>
@@ -10,7 +24,7 @@ export default class Welcome extends Component {
           <div className='login-area'>
             <p style={{"font-family": "CuprumBold", fontSize: '30px'}}>LET'S PLAY THE GAME</p>
             <div>
-              <button onClick={() => this.props.history.push("/login")} type="submit" className='v-button play-button'>PLAY NOW</button><br />
+              <button onClick={() => this.checkIsLogin()} type="submit" className='v-button play-button'>PLAY NOW</button><br />
               <button type="submit" className='v-button history-button'>HISTORY</button>
             </div>
           </div>

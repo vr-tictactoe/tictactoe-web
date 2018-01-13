@@ -15,18 +15,6 @@ export default class NavBar extends Component {
     localStorage.clear()
     firebase.auth().signOut().then(function() {
       alert('success logout')
-      // self.setState({
-        //   user: {
-      //       uid: '',
-      //       name: '',
-      //       email: '',
-      //       photoURL: '',
-      //       totalPlay: '',
-      //       win: '',
-      //       lose: '',
-      //       draw: ''
-      //   }         
-      // })
     }, function(error) {
       alert('error')
     });    
