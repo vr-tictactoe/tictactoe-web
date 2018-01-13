@@ -21,7 +21,9 @@ export default class JoinRoom extends Component {
 
   joinRoom(gameRoom) {
     db.ref('games').child(gameRoom).once('value', room => {
-      if(room.val().player2.uid === '' && room.val().winner === '') {
+      if(room.val().player2.uid === '' && room.val().winner === '' &&
+         room.val().player1.uid !== localStorage.getItem('uid') &&
+         room.val().player2.uid !== localStorage.getItem('uid')) {
         db.ref('games').child(gameRoom).update({
           player2: {
             name: this.state.player.name,
@@ -35,6 +37,9 @@ export default class JoinRoom extends Component {
         alert('game already finished')
       }else if(room.val().player2.uid !== '' && room.val().winner === ''){
         alert('game already Full')
+      }else if(room.val().player1.uid === localStorage.getItem('uid')){
+        alert('Welcome Back')
+        window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
       }
     })
   }

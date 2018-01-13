@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {
-  Link
+  Link,
+  withRouter
 } from 'react-router-dom';
 import { db } from '../firebase.js'
 import firebase from 'firebase'
 import firebaseui from 'firebaseui';
 
 
-export default class SelectAvatar extends Component {
+class SelectAvatar extends Component {
   constructor() {
     super()
     this.state = {
@@ -23,7 +24,6 @@ export default class SelectAvatar extends Component {
       classAvatar1: 'avatar',
       classAvatar2: 'avatar avatar-select'
     })
-    console.log(this.state)
   }
 
   checkLogin() {
@@ -43,6 +43,7 @@ export default class SelectAvatar extends Component {
                 win: 0,
                 lose: 0,
                 draw: 0,
+                avatar: '',
               }
               db.ref('users').push(userData)
                           
@@ -62,7 +63,8 @@ export default class SelectAvatar extends Component {
                   totalPlay: objUser.totalPlay,
                   win: objUser.win,
                   lose: objUser.lose,
-                  draw: objUser.draw                  
+                  draw: objUser.draw ,
+                  avatar: objUser.avatar                 
                 }
                })              
             })
@@ -81,7 +83,19 @@ export default class SelectAvatar extends Component {
       classAvatar1: 'avatar avatar-select',
       classAvatar2: 'avatar'
     })
-    console.log(this.state)
+  }
+
+  selectAvatar() {
+    db.ref('users').once('value', allUser => {
+      for(let user in allUser.val()){
+        if(localStorage.getItem('uid') === allUser.val()[user].uid){
+          db.ref('users').child(user).update({
+            avatar: `${this.state.avatar}.png`
+          })
+        }
+      }
+    })
+    this.props.history.push('/play')
   }
 
   render() {
@@ -95,8 +109,10 @@ export default class SelectAvatar extends Component {
           <br />
           <span className='avatar-name'>{avatar.toUpperCase()}</span>
         </div>
-        <Link to="/play"><button type="button" className="v-button avatar-button">SELECT</button></Link>
+        <button onClick={() => this.selectAvatar()} type="button" className="v-button avatar-button">SELECT</button>
       </div>
     )
   }
 }
+
+export default withRouter (SelectAvatar)
