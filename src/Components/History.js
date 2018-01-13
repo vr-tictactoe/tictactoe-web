@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 import {getHistory, getHistoryAPI} from '../actions';
@@ -63,6 +64,7 @@ class History extends Component {
         {
           this.state.loading ? <h3> NOW LOADING... </h3>
             : <div><h1>THE RECORDS</h1>
+              <Link to="/"><button className="back-button"></button></Link>
               <table className="table table-hover">
                 <thead>
                   <tr>
@@ -73,7 +75,7 @@ class History extends Component {
                 </thead>
                 {this.state.allHistory.map((played) => {
                   return <tbody>
-                  <tr className="table-active">
+                  <tr className="table-primary">
                     <td>{played.player1}</td>
                     <td>{played.player2}</td>
                     <td>{played.winner}</td>

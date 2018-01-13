@@ -24,12 +24,13 @@ class App extends Component {
       <Provider store={store} >
         <Router>
           <div className="App">
-            <Route exact path="/" render={() => <LoginForm> <Footer /></LoginForm> } />
+            <Route exact path="/" render={() => <LoginForm> </LoginForm> } />
             <Route path="/avatar" render={() => <NavBar><Footer> <SelectAvatar /> </Footer> </NavBar>} />
-            <Route exact path="/play" render={() => <NavBar><PlayGame /> <Footer /> </NavBar>} />
-            <Route path="/play/create" render={() => <NavBar><CreateRoom /> <Footer /> </NavBar>} />
-            <Route path="/play/join" render={() => <NavBar><JoinRoom /> <Footer /> </NavBar>} />
-            <Route path="/history" render={() => <NavBar><History> <Footer /> </History> </NavBar>} />
+            <Route exact path="/play" render={() => <NavBar><PlayGame />  </NavBar>} />
+            <Route path="/play/create" render={() => <NavBar><CreateRoom />  </NavBar>} />
+            <Route path="/play/join" render={() => <NavBar><JoinRoom />  </NavBar>} />
+            <Route path="/history" render={() => <NavBar><History>  </History> </NavBar>} />
+            <Footer />
           </div>
         </Router>
       </Provider>
