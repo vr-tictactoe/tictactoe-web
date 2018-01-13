@@ -13,17 +13,20 @@ export default class CreateRoom extends Component {
       gameKeyDummy: '',
       type: '',
       games: [],
+      nameRoom: '',
     }
   }
 
-  handleInput(i) {
-    
+  handleInput(event) {
+    this.setState({
+      nameRoom : event.target.value
+    })  
   }
 
   async createRoom () {
     const newGame = {
       board: ['','','','','','','','',''],
-      roomName: '',
+      roomName: this.state.nameRoom,
       player1: {
         name: this.state.player.name,
         uid: this.state.player.uid,
@@ -40,7 +43,8 @@ export default class CreateRoom extends Component {
 
     let Key = await db.ref('games').push(newGame).key
     this.setState({
-      gameKeyDummy: Key
+      gameKeyDummy: Key,
+      nameRoom: '',
     })
 
     window.location.href = `http://localhost:8081/vr/?room=${Key}&player=${this.state.uid}`;
