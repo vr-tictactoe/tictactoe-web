@@ -5,7 +5,7 @@ import firebaseui from 'firebaseui';
 
 
 const uiConfig = {
-  signInSuccessUrl: 'http://localhost:3000/avatar',
+  signInSuccessUrl: 'http://vrtoe.septianfujianto.com/avatar',
   signInOptions: [
     // Leave the lines as is for the providers you want to offer your users.
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -25,7 +25,7 @@ export default class LoginButton extends Component {
 
   loadFirebaseAuth(){
     ui.start('#firebaseui-auth-container', uiConfig);
-  }      
+  }
 
   componentWillMount() {
     db.ref('users').orderByChild('uid').equalTo(localStorage.getItem('uid')).once('value', snaphotUser => {
@@ -33,11 +33,11 @@ export default class LoginButton extends Component {
       if(snaphotUser.val() !== null){
         this.props.history.push('/play')
       }
-    })     
+    })
   }
 
   componentDidMount() {
-     this.loadFirebaseAuth()  
+     this.loadFirebaseAuth()
   }
 
   render() {

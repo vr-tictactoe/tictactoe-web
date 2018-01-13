@@ -49,7 +49,7 @@ export default class CreateRoom extends Component {
       nameRoom: '',
     })
 
-    window.location.href = `http://localhost:8081/vr/?room=${Key}&player=${this.state.uid}`;
+    window.location.href = `http://vrtictactoe.septianfujianto.com/?room=${Key}&player=${this.state.uid}`;
     // this.props.history.push(`/game/${Key}`)
   }
 
