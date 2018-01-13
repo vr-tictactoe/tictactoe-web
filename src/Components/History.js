@@ -64,8 +64,8 @@ class History extends Component {
         {
           this.state.loading ? <h3> NOW LOADING... </h3>
             : <div><h1>THE RECORDS</h1>
-              <Link to="/"><button className="back-button"></button></Link>
-              <table className="table table-hover">
+              <div style={{height: '350px', overflow: 'scroll'}}>
+              <table className="table">
                 <thead>
                   <tr>
                     <th scope="col">Player 1</th>
@@ -83,6 +83,8 @@ class History extends Component {
                 </tbody>
               })}
               </table>
+              </div>
+              <Link to="/"><button className="back-button"></button></Link>
               </div>
         }
       </div>
