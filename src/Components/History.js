@@ -26,40 +26,61 @@ class History extends Component {
     })
   }
 
-  lookingHistory() {
-    let history = this.state.allHistory
-    let winner = this.state.winning
+  // lookingHistory() {
+  //   let history = this.state.allHistory
+  //   let winner = this.state.winning
+  //   let counter = []
+  //   console.log('lalallalalalalala');
 
-    let name = ''
-    for (let i = 0; i < history.length; i ++) {
-      console.log(history[i].winner);
-      if (name !== history[i].winner) {
-        let obj = {
-          name: history[i].winner,
-          totalWin: 1,
-          totalPlayed: 1
-        }
-        name = history[i].winner
-        winner.push(obj)
-      } else {
-        let idx = winner.findIndex(a => a.name === name)
-        winner[idx].totalPlayed++
-        winner[idx].totalWin++
-      }
-    }
-
-    
-    console.log('skor ', winner);
-  }
+  //   let name = ''
+  //   history.forEach(played => {
+  //     if (played.winner !== name) {
+  //       console.log('masuk kondisi true gak?');
+  //       let obj = {
+  //         name: played.winner,
+  //         playCount: 1
+  //       }
+  //       counter.push(obj)
+  //       name = played.winner
+  //     } else if (name === played.winner) {
+  //       console.log('masuk kondisi else gak?');
+  //       let player = winner.filter(win => {
+  //         return win.name === name
+  //       })
+  //       console.log(player);
+  //       player[0].playCount++
+  //     } else if (name === played.player1 || name === played.player2) {
+  //       let player = winner.filter(win => win.name === name)
+  //       player[0].playCount++
+  //     }
+  //   })
+  //   console.log(winner);
+  // }
 
   render () {
     return (
       <div className="container">
         {
           this.state.loading ? <h3> NOW LOADING... </h3>
-            : <div><h1>Welldone</h1>
-              <button onClick={() => this.lookingHistory()}>Look Winner</button>
-              
+            : <div><h1>THE RECORDS</h1>
+              <table className="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Player 1</th>
+                    <th scope="col">Player 2</th>
+                    <th scope="col">Winner</th>
+                  </tr>
+                </thead>
+                {this.state.allHistory.map((played) => {
+                  return <tbody>
+                  <tr className="table-active">
+                    <td>{played.player1}</td>
+                    <td>{played.player2}</td>
+                    <td>{played.winner}</td>
+                  </tr>
+                </tbody>
+              })}
+              </table>
               </div>
         }
       </div>
