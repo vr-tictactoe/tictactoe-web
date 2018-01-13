@@ -30,12 +30,14 @@ export default class CreateRoom extends Component {
       player1: {
         name: this.state.player.name,
         uid: this.state.player.uid,
-        type: 'X'
+        type: 'X',
+        avatar: this.state.player.avatar
       },
       player2: {
         name: '',
         uid: '',
-        type: ''
+        type: '',
+        avatar: this.state.player.avatar
       },
       winner: '',
       turn: this.state.player.uid,

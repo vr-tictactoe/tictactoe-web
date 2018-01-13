@@ -29,6 +29,7 @@ export default class JoinRoom extends Component {
             name: this.state.player.name,
             uid: this.state.player.uid,
             type: 'O',
+            avatar: this.state.player.avatar
           }
         })
 
