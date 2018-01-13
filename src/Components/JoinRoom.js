@@ -1,20 +1,74 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import { db } from '../firebase.js'
 
 export default class JoinRoom extends Component {
+  constructor(props) {
+    super()
+    this.state = {
+      uid: localStorage.getItem('uid'),
+      player: [],
+      gameKey: '',
+      gameKeyDummy: '',
+      type: '',
+      games: [],
+    }
+  }
+
   handleButton (e) {
     console.log(e);
   }
 
+  joinRoom(gameRoom) {
+    db.ref('games').child(gameRoom).once('value', room => {
+      if(room.val().player2.uid === '' && room.val().winner === '') {
+        db.ref('games').child(gameRoom).update({
+          player2: {
+            name: this.state.player.name,
+            uid: this.state.player.uid,
+            type: 'O',
+          }
+        })
+
+        window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
+      }else if(room.val().winner !== ''){
+        alert('game already finished')
+      }else if(room.val().player2.uid !== '' && room.val().winner === ''){
+        alert('game already Full')
+      }
+    })
+  }
+
+  componentDidMount() {
+    db.ref('users').orderByChild('uid').equalTo(this.state.uid).once('value', snaphotUser => {
+      snaphotUser.forEach(snapUser => {
+        this.state.player = snapUser.val()
+      })
+    })
+
+    db.ref('games').on('value', snapshot => {
+      let allGames = []
+      for(let game in snapshot.val()){
+        let objGame= {
+          gameName: snapshot.val()[game].roomName,
+          gameId: game
+        }
+        allGames.push(objGame)
+      }
+      this.setState({
+        games: allGames
+      })
+    })
+  }
+
   render () {
-    let looptest = [1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,1,1]
     return (
       <div className='col-md-8 offset-md-2'>
         <h1>Select Room</h1>
         <div className="list-room" data-toggle="buttons">
           { 
-            looptest.map(tes => {
-              return <button type="button" className="join-list-btn v-button" onClick={(event)=> this.handleButton(event)}>Button</button>
+            this.state.games.map(game => {
+              return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
             })
           }
         </div>
