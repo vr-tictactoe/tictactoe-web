@@ -17,7 +17,7 @@ export default class LoginForm extends Component {
         <div className='col-md-6 offset-md-3 login-page'>
           <img className='logo' src='./assets/img/virtoe-logo.png' alt='logo'/>
           <div className='login-area'>
-            <p style={{"font-family": "CuprumBold", fontSize: '30px'}}>LET'S PLAY THE GAME</p>
+            <p style={{fontFamily: "CuprumBold", fontSize: '30px'}}>LET'S PLAY THE GAME</p>
             { 
               this.state.play ? 
               <div>
