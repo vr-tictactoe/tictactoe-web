@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import { db } from '../firebase.js'
+import { Link } from 'react-router-dom'
 
-export default class CreateRoom extends Component {
+class RoomComponent extends Component {
   constructor(props) {
     super()
     this.state = {
@@ -13,31 +13,22 @@ export default class CreateRoom extends Component {
       gameKeyDummy: '',
       type: '',
       games: [],
-      nameRoom: '',
     }
-  }
-
-  handleInput(event) {
-    this.setState({
-      nameRoom : event.target.value
-    })
   }
 
   async createRoom () {
     const newGame = {
       board: ['','','','','','','','',''],
-      roomName: this.state.nameRoom,
+      roomName: '',
       player1: {
         name: this.state.player.name,
         uid: this.state.player.uid,
-        type: 'X',
-        avatar: this.state.player.avatar
+        type: 'X'
       },
       player2: {
         name: '',
         uid: '',
-        type: '',
-        avatar: ''
+        type: ''
       },
       winner: '',
       turn: this.state.player.uid,
@@ -45,12 +36,32 @@ export default class CreateRoom extends Component {
 
     let Key = await db.ref('games').push(newGame).key
     this.setState({
-      gameKeyDummy: Key,
-      nameRoom: '',
+      gameKeyDummy: Key
     })
 
     window.location.href = `http://localhost:8081/vr/?room=${Key}&player=${this.state.uid}`;
     // this.props.history.push(`/game/${Key}`)
+  }
+
+  joinRoom(gameRoom) {
+    db.ref('games').child(gameRoom).once('value', room => {
+      if(room.val().player2.uid === '' && room.val().winner === '') {
+        db.ref('games').child(gameRoom).update({
+          player2: {
+            name: this.state.player.name,
+            uid: this.state.player.uid,
+            type: 'O',
+          }
+        })
+
+        window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
+        // this.props.history.push(`/game/${gameRoom}`)
+      }else if(room.val().winner !== ''){
+        alert('game already finished')
+      }else if(room.val().player2.uid !== '' && room.val().winner === ''){
+        alert('game already Full')
+      }
+    })
   }
 
   componentWillMount() {
@@ -71,19 +82,19 @@ export default class CreateRoom extends Component {
     })
   }
 
-  render () {
+
+  render() {
     return (
-      <div className='col-md-4 offset-md-4 wrap-content'>
-        <div>
-          <h1>Create Room</h1>
-          <div className="form-group">
-            <input onChange={(v) => this.handleInput(v)} type="text" className="v-form" placeholder="Enter Room Name" />
-          </div>
-          <button onClick={() => this.createRoom()} type="submit" className="v-button room-button">CREATE</button>
-        </div>
-        <br/>
-        <Link to="/play"><button onClick={() => this.setState({play: false})} className='back-button'></button></Link>
+      <div>
+      <button onClick={() => this.createRoom()}> Create Room </button>
+      {this.state.games.map((game,i) => {
+        return(
+          <button key={i} onClick={() => this.joinRoom(game)}> Join Room {i}</button>
+          )
+      })}
       </div>
-    )
+      )
   }
 }
+
+export default RoomComponent

@@ -2,23 +2,26 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router-dom';
+import Footer from './Footer'
+import firebase from 'firebase'
 
 export default class NavBar extends Component {
-  constructor (props) {
-    super (props)
-    this.state ={
-      statusLogin: true
-    }
+  logoutHandle() {
+    console.log('logout');
   }
 
-  logoutHandle (e) {
-    e.preventDefault()
-    this.setState({statusLogin: false})
-    console.log(this.state.statusLogin);
+  logOut() {
+    const self=this
+    localStorage.clear()
+    firebase.auth().signOut().then(function() {
+      alert('success logout')
+    }, function(error) {
+      alert('error')
+    });    
+    console.log(this.props)
   }
 
   render () {
-    const statusLogin = this.state.statusLogin
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark">
@@ -30,13 +33,13 @@ export default class NavBar extends Component {
 
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+              <li className="form-inline nav-item active">
+                <img src='../assets/img/single-logo.png' alt='single-logo'/>
               </li>
             </ul>
-            <form className="form-inline my-2 my-lg-0">
-              {statusLogin && <button className="btn btn-danger my-2 my-sm-0" type="submit" onClick={this.logoutHandle.bind(this)}>Logout</button>}   
-            </form>
+            <div className="form-inline my-2 my-lg-0">
+              <Link to='/'><button className="v-button logout-button" type="submit" onClick={() => this.logOut()}>Logout</button></Link>
+            </div>
           </div>
         </nav>
         <div>

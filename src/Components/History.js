@@ -60,7 +60,7 @@ class History extends Component {
 
   render () {
     return (
-      <div  className='col-md-8 offset-md-2'>
+      <div  className='col-md-8 offset-md-2 login-page history'>
         {
           this.state.loading ? <div className='loading'><h3> NOW LOADING... </h3></div>
             : <div><h1>THE RECORDS</h1>
