@@ -60,11 +60,11 @@ class History extends Component {
 
   render () {
     return (
-      <div className="container">
+      <div  className='col-md-8 offset-md-2'>
         {
-          this.state.loading ? <h3> NOW LOADING... </h3>
+          this.state.loading ? <div className='loading'><h3> NOW LOADING... </h3></div>
             : <div><h1>THE RECORDS</h1>
-              <div style={{height: '350px', overflow: 'scroll'}}>
+              <div className='list-room'>
               <table className="table">
                 <thead>
                   <tr>
@@ -84,6 +84,7 @@ class History extends Component {
               })}
               </table>
               </div>
+              <br/>
               <Link to="/"><button className="back-button"></button></Link>
               </div>
         }
