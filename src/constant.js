@@ -1,2 +1,2 @@
-export const WEB_URL = 'http://localhost:3000'
-export const VR_URL = 'http://localhost:8081/vr'
+export const WEB_URL = 'https://backup-vr-tictactoe.firebaseapp.com/'
+export const VR_URL = 'https://vrtictactoe.septianfujianto.com/'
