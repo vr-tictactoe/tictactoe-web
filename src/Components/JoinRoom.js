@@ -30,22 +30,17 @@ export default class JoinRoom extends Component {
             name: this.state.player.name,
             uid: this.state.player.uid,
             type: 'O',
-            avatar: this.state.player.avatar
+            avatar: this.state.player.avatar,
+            status: 'Not Ready'
           }
         })
 
         window.location.href = `${VR_URL}/?room=${gameRoom}&player=${this.state.uid}`;
       }else if(room.val().winner !== ''){
         alert('game already finished')
-<<<<<<< HEAD
-      }else if(room.val().player2.uid !== '' && room.val().winner === '' 
-                && room.val().player1.uid !== localStorage.getItem('uid')
-                && room.val().player2.uid !== localStorage.getItem('uid')){
-=======
       }else if(room.val().player2.uid !== '' && room.val().winner === ''
                && room.val().player1.uid !== localStorage.getItem('uid')
                && room.val().player2.uid !== localStorage.getItem('uid')){
->>>>>>> a3cc09b439741fef68452fdb7105766f15add540
         alert('game already Full')
       }else if(room.val().player1.uid === localStorage.getItem('uid') || room.val().player2.uid === localStorage.getItem('uid')){
         alert('Welcome Back')
