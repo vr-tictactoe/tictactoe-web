@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { db } from '../firebase.js'
 import firebase from 'firebase'
 import firebaseui from 'firebaseui';
-
+import { WEB_URL } from '../constant'
 
 const uiConfig = {
-  signInSuccessUrl: 'http://localhost:3000/avatar',
+  signInSuccessUrl: WEB_URL+'/avatar',
   signInOptions: [
     // Leave the lines as is for the providers you want to offer your users.
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,

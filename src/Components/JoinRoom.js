@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { db } from '../firebase.js'
+import { VR_URL } from '../constant'
 
 export default class JoinRoom extends Component {
   constructor(props) {
@@ -33,14 +34,14 @@ export default class JoinRoom extends Component {
           }
         })
 
-        window.location.href = `http://vrtictactoe.septianfujianto.com/?room=${gameRoom}&player=${this.state.uid}`;
+        window.location.href = `${VR_URL}/?room=${gameRoom}&player=${this.state.uid}`;
       }else if(room.val().winner !== ''){
         alert('game already finished')
       }else if(room.val().player2.uid !== '' && room.val().winner === ''){
         alert('game already Full')
       }else if(room.val().player1.uid === localStorage.getItem('uid')){
         alert('Welcome Back')
-        window.location.href = `http://vrtictactoe.septianfujianto.com/?room=${gameRoom}&player=${this.state.uid}`;
+        window.location.href = `${VR_URL}/?room=${gameRoom}&player=${this.state.uid}`;
       }
     })
   }
