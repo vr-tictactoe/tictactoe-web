@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "axios": "^0.17.1",
+>>>>>>> origin/redux-ui-web
     "firebase": "^4.8.2",
     "firebaseui": "^2.5.1",
     "react": "^16.2.0",
@@ -10,7 +14,8 @@
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

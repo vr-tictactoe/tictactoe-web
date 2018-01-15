@@ -73,7 +73,7 @@ export default class JoinRoom extends Component {
       <div className='col-md-8 offset-md-2'>
         <h1>Select Room</h1>
         <div className="list-room" data-toggle="buttons">
-          {
+          { 
             this.state.games.map(game => {
               return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
             })
