@@ -36,9 +36,11 @@ export default class JoinRoom extends Component {
         window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
       }else if(room.val().winner !== ''){
         alert('game already finished')
-      }else if(room.val().player2.uid !== '' && room.val().winner === ''){
+      }else if(room.val().player2.uid !== '' && room.val().winner === '' 
+                && room.val().player1.uid !== localStorage.getItem('uid')
+                && room.val().player2.uid !== localStorage.getItem('uid')){
         alert('game already Full')
-      }else if(room.val().player1.uid === localStorage.getItem('uid')){
+      }else if(room.val().player1.uid === localStorage.getItem('uid') || room.val().player2.uid === localStorage.getItem('uid')){
         alert('Welcome Back')
         window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
       }
