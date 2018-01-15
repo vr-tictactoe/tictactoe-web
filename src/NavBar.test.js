@@ -1,29 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './Components/NavBar';
+import JoinRoom from './Components/JoinRoom';
 import { configure, shallow, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 configure({ adapter: new Adapter() })
 
-describe('Testing NavBar', () => {
-  const wrapper = shallow(<div />)
-  test('Should render LInk', () => {
-    const link = wrapper.find('Link')
-    expect(link).toBeDefined()
+describe('Testing the NavBar', () => {
+  test('It should render the button', () => {
+    const Link = shallow(
+      <button className="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarColor01" aria-controls="navbarColor01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span></button>
+    )
+    expect(Link).toMatchSnapshot()
   })
-  test('Should render button', () => {
-    const button = wrapper.find('button')
-    expect(button).toBeDefined()
+  test('It should render the form', () => {
+    const Link = shallow(
+      <form className="form-inline my-2 my-lg-0">
+        {<button className="btn btn-danger my-2 my-sm-0" type="submit" >Logout</button>}
+      </form>
+    )
+    expect(Link).toMatchSnapshot()
   })
   test('Should render nav', () => {
+    const wrapper = shallow(<div />)
     const nav = wrapper.find('nav')
     expect(nav).toBeDefined()
   })
-  test('Button should handle click event', () => {
-    window.alert = jest.fn()
-    const output = shallow(<button className="btn btn-danger my-2 my-sm-0" type="submit" onClick={this.logoutHandle.bind(this)}>Logout</button>)
-    output.simulate('click')
-    expect(window.alert).toHaveBeenCalledWith('clicked')
-  })
+  test()
 })
