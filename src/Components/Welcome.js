@@ -26,6 +26,7 @@ export default class Welcome extends Component {
             <div>
               <button onClick={() => this.checkIsLogin()} type="submit" className='v-button play-button'>PLAY NOW</button><br />
               <button onClick={() => this.props.history.push('/history')} type="submit" className='v-button history-button'>HISTORY</button>
+              <button onClick={() => this.props.history.push('/leaderboard')} type="submit" className='v-button history-button'>LEADERBOARD</button>
             </div>
           </div>
         </div>

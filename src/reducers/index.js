@@ -1,7 +1,8 @@
 import {combineReducers} from 'redux';
 
 const history = {
-  players: null
+  players: null,
+  dataPlayers: null
 }
 
 const historyReducer = (state = history, actions) => {
@@ -9,6 +10,9 @@ const historyReducer = (state = history, actions) => {
     case 'GET_ALL_HISTORY':
       console.log('=======================masuk sini gak?');
       return {...state, players: actions.payload}
+    case 'GET_DATA_PLAYERS':
+      console.log('=======================dapat datanya gak?')
+      return {...state, dataPlayers: actions.payload}
     default:
       return state
   }

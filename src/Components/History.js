@@ -9,54 +9,20 @@ class History extends Component {
     super ()
     this.state = {
       allHistory: [],
-      loading: true,
-      winning: []
+      loading: true
     }
   }
 
   componentWillMount() {
-    console.log('=============component will mount');
     this.props.fetchHistory()
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('=======status props history', nextProps.history);
     this.setState({
       allHistory: nextProps.history,
       loading: false
     })
   }
-
-  // lookingHistory() {
-  //   let history = this.state.allHistory
-  //   let winner = this.state.winning
-  //   let counter = []
-  //   console.log('lalallalalalalala');
-
-  //   let name = ''
-  //   history.forEach(played => {
-  //     if (played.winner !== name) {
-  //       console.log('masuk kondisi true gak?');
-  //       let obj = {
-  //         name: played.winner,
-  //         playCount: 1
-  //       }
-  //       counter.push(obj)
-  //       name = played.winner
-  //     } else if (name === played.winner) {
-  //       console.log('masuk kondisi else gak?');
-  //       let player = winner.filter(win => {
-  //         return win.name === name
-  //       })
-  //       console.log(player);
-  //       player[0].playCount++
-  //     } else if (name === played.player1 || name === played.player2) {
-  //       let player = winner.filter(win => win.name === name)
-  //       player[0].playCount++
-  //     }
-  //   })
-  //   console.log(winner);
-  // }
 
   render () {
     return (
