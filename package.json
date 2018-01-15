@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-=======
     "axios": "^0.17.1",
->>>>>>> origin/redux-ui-web
     "firebase": "^4.8.2",
     "firebaseui": "^2.5.1",
     "react": "^16.2.0",
