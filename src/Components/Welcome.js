@@ -25,7 +25,7 @@ export default class Welcome extends Component {
             <p style={{"font-family": "CuprumBold", fontSize: '30px'}}>LET'S PLAY THE GAME</p>
             <div>
               <button onClick={() => this.checkIsLogin()} type="submit" className='v-button play-button'>PLAY NOW</button><br />
-              <button type="submit" className='v-button history-button'>HISTORY</button>
+              <button onClick={() => this.props.history.push('/history')} type="submit" className='v-button history-button'>HISTORY</button>
             </div>
           </div>
         </div>

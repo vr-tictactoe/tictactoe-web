@@ -188,15 +188,17 @@ body h1 {
   font-size: 40px;
 }
 
+.loading {
+  height: 400px;
+}
+
 .footer {
-  position: absolute;
-  right: 0;
+  text-align: center;
+  width: 100%;
   bottom: 0;
-  left: 0;
   font-size: 22px;
   color: #fff;
   padding: 2rem;
-  text-align: center;
 }
 
 .list-room {
@@ -334,4 +336,21 @@ div#navbarColor01 {
 .avatar-name {
   margin-top: 20px;
   font-size: 30px;
+}
+
+.history {
+  font-size: 20px;
+}
+
+@media only screen and (min-device-width: 720px) {
+  .footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 22px;
+    color: #fff;
+    padding: 2rem;
+
+  }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { db } from '../firebase.js'
+import { VR_URL } from '../constant.js'
 
 export default class CreateRoom extends Component {
   constructor(props) {
@@ -49,7 +50,7 @@ export default class CreateRoom extends Component {
       nameRoom: '',
     })
 
-    window.location.href = `http://localhost:8081/vr/?room=${Key}&player=${this.state.uid}`;
+    window.location.href = `${VR_URL}/?room=${Key}&player=${this.state.uid}`;
     // this.props.history.push(`/game/${Key}`)
   }
 

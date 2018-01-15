@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { db } from '../firebase.js'
+import { VR_URL } from '../constant'
 
 export default class JoinRoom extends Component {
   constructor(props) {
@@ -33,16 +34,22 @@ export default class JoinRoom extends Component {
           }
         })
 
-        window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
+        window.location.href = `${VR_URL}/?room=${gameRoom}&player=${this.state.uid}`;
       }else if(room.val().winner !== ''){
         alert('game already finished')
+<<<<<<< HEAD
       }else if(room.val().player2.uid !== '' && room.val().winner === '' 
                 && room.val().player1.uid !== localStorage.getItem('uid')
                 && room.val().player2.uid !== localStorage.getItem('uid')){
+=======
+      }else if(room.val().player2.uid !== '' && room.val().winner === ''
+               && room.val().player1.uid !== localStorage.getItem('uid')
+               && room.val().player2.uid !== localStorage.getItem('uid')){
+>>>>>>> a3cc09b439741fef68452fdb7105766f15add540
         alert('game already Full')
       }else if(room.val().player1.uid === localStorage.getItem('uid') || room.val().player2.uid === localStorage.getItem('uid')){
         alert('Welcome Back')
-        window.location.href = `http://localhost:8081/vr/?room=${gameRoom}&player=${this.state.uid}`;
+        window.location.href = `${VR_URL}/?room=${gameRoom}&player=${this.state.uid}`;
       }
     })
   }
@@ -74,7 +81,7 @@ export default class JoinRoom extends Component {
       <div className='col-md-8 offset-md-2'>
         <h1>Select Room</h1>
         <div className="list-room" data-toggle="buttons">
-          { 
+          {
             this.state.games.map(game => {
               return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
             })
