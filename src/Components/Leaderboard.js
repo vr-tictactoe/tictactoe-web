@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import ReactLoading from 'react-loading';
 
 import { dataPlayer, getDataPlayer } from '../actions'
 
@@ -28,20 +29,24 @@ class LeaderBoard extends Component {
     const records = this.state.dataPlayers
     return (
       <div className='col-md-8 offset-md-2 login-page history'>
-        {this.state.loading ? <div className='loading'><h3> NOW LOADING... </h3></div> :
+        {this.state.loading ? <div className='loading'>
+          <ReactLoading style={{'align-self': 'center'}} height='50' type="spin" color="#5a4263" />
+        </div> :
         <div>
           <h1>LEADERBOARD</h1>
           <div className='list-room'>
             <table className="table">
               <thead>
                 <tr>
+                  <th scope="col">#Rank </th>
                   <th scope="col">Name </th>
                   <th scope="col">Score</th>
                 </tr>
               </thead>
-              {records.sort((a, b) => b.score - a.score).map((played) => {
+              {records.sort((a, b) => b.score - a.score).map((played, idx) => {
                 return <tbody>
                   <tr className="table-primary">
+                    <td>{idx+= 1}</td>
                     <td>{played.name}</td>
                     <td>{played.score}</td>
                   </tr>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import ReactLoading from 'react-loading';
 
 import {getHistory, getHistoryAPI} from '../actions';
 
@@ -28,7 +29,9 @@ class History extends Component {
     return (
       <div  className='col-md-8 offset-md-2 login-page history'>
         {
-          this.state.loading ? <div className='loading'><h3> NOW LOADING... </h3></div>
+          this.state.loading ? <div className='loading'> 
+          <ReactLoading style={{ 'align-self': 'center' }} height='50' type="spin" color="#5a4263" />
+          </div>
             : <div><h1>THE RECORDS</h1>
               <div className='list-room'>
               <table className="table">
