@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from './Components/NavBar';
-import JoinRoom from './Components/JoinRoom';
-import {Route} from 'react-router-dom'
-import LoginForm from './Components/LoginForm'
+import {Route} from 'react-router-dom';
+import { configure, shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
 import App from './App';
-import { configure, shallow, mount } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import JoinRoom from './Components/JoinRoom';
+import LoginForm from './Components/LoginForm';
+import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
 
 configure({ adapter: new Adapter() })
 
@@ -42,5 +44,15 @@ describe('Testing the NavBar', () => {
     const app = shallow(<App />)
     const playGame = app.find(<Route exact path="/play" render={() => <NavBar><PlayGame /></NavBar>} />)
     expect(playGame).toMatchSnapshot()
+  })
+  test('App should have JoinRoom', () => {
+    const app = shallow(<App />)
+    const joinRoom = app.find(<Route path="/play/join" render={() => <NavBar><JoinRoom /></NavBar>} />)
+    expect(joinRoom).toMatchSnapshot()
+  })
+  test('App should have Footer', () => {
+    const app = shallow(<App />)
+    const footer = app.find(<Footer /> )
+    expect(footer).toMatchSnapshot()
   })
 })
