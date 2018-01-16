@@ -40,12 +40,14 @@ export const getDataPlayer = () => {
     db.ref('/users').once('value')
     .then((snap) => {
       snap.forEach(data => {
-        let obj = {
-          id: data.key,
-          name: data.val().name,
-          score: ((data.val().win * 10 + data.val().draw * 5) / data.val().totalPlay) 
+        if (data.val().totalPlay !== 0) {
+          let obj = {
+            id: data.key,
+            name: data.val().name,
+            score: ((data.val().win * 10 + data.val().draw * 5) / data.val().totalPlay)
+          }
+          listPlayers.push(obj)
         }
-        listPlayers.push(obj)
       })
       console.log(listPlayers);
       dispatch(dataPlayer(listPlayers))
