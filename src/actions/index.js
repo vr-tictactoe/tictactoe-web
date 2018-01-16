@@ -16,13 +16,10 @@ export const getHistoryAPI = () => {
   return (dispatch) => {
     https.get('/getHistory')
     .then(({data}) => {
-      console.log(data)
       dispatch(getHistory(data))
     })
     .catch(err => {
-      console.log('====================================');
       console.log('error getting');
-      console.log('====================================');
     })
   }
 }
@@ -49,7 +46,6 @@ export const getDataPlayer = () => {
           listPlayers.push(obj)
         }
       })
-      console.log(listPlayers);
       dispatch(dataPlayer(listPlayers))
     })
     .catch(err => { 
