@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { db } from '../firebase.js'
 import { VR_URL } from '../constant'
+import Spinner from 'react-spinkit'
 
 export default class JoinRoom extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class JoinRoom extends Component {
       gameKeyDummy: '',
       type: '',
       games: [],
+      loading: true
     }
   }
 
@@ -66,7 +68,8 @@ export default class JoinRoom extends Component {
         allGames.push(objGame)
       }
       this.setState({
-        games: allGames
+        games: allGames,
+        loading: false
       })
     })
   }
@@ -74,15 +77,21 @@ export default class JoinRoom extends Component {
   render () {
     return (
       <div className='col-md-8 offset-md-2 have-list'>
-        <h1>Select Room</h1>
-        <div className="list-room" data-toggle="buttons">
-          {
-            this.state.games.map(game => {
-              return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
-            })
-          }
-        </div>
-        <Link to="/play"><button className='back-button'></button></Link>
+        {
+          this.state.loading ? <div className='loading'><Spinner name="ball-pulse-sync" color="#fff"/></div>
+          :
+          <div>
+            <h1>Select Room</h1>
+            <div className="list-room" data-toggle="buttons">
+              {
+                this.state.games.map(game => {
+                  return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
+                })
+              }
+            </div>
+            <Link to="/play"><button className='back-button'></button></Link>
+          </div>
+        }
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import Spinner from 'react-spinkit'
 
 import {getHistory, getHistoryAPI} from '../actions';
 
@@ -62,7 +63,7 @@ class History extends Component {
     return (
       <div  className='col-md-8 offset-md-2 login-page history'>
         {
-          this.state.loading ? <div className='loading'><h3> NOW LOADING... </h3></div>
+          this.state.loading ? <div className='loading'><Spinner name="ball-pulse-sync" color="#fff" fadeIn="none"/></div>
             : <div><h1>THE RECORDS</h1>
               <div className='list-room'>
               <table className="table">
@@ -84,7 +85,6 @@ class History extends Component {
               })}
               </table>
               </div>
-              <br/>
               <Link to="/"><button className="back-button"></button></Link>
               </div>
         }

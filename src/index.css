@@ -194,7 +194,7 @@ body h1 {
 }
 
 .loading {
-  height: 400px;
+  margin-top: 200px;
 }
 
 .footer {
@@ -280,16 +280,23 @@ body h1 {
 }
 
 .list-avatar {
+  display: flex;
   border: 2px solid #306ed9a6;
   border-radius: 10px;
   flex: 1;
   padding: 20px 0;
   background-color: rgba(183, 226, 253, 0.5);
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
   -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
   box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login-page {
+  margin-top: 60px;
 }
 
 .avatar-button {
@@ -298,9 +305,7 @@ body h1 {
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
-  padding-left: 40px;.login-page {
-    margin-top: 60px;
-}
+  padding-left: 40px;
 }
 
 .avatar-button:hover {
@@ -375,6 +380,28 @@ nav {
 	padding: 20px;	
 }
 
+.mdl-shadow--2dp {
+  background: none;
+  box-shadow: none;
+}
+
+.firebaseui-info-bar {
+  display: none;
+  margin-top: 20px;
+}
+
+div.mdl-progress::after {
+  display: block;
+  color: #fff;
+  content: "Authenticating";
+  margin: 20px auto;
+  text-align: center;
+}
+
+.mdl-progress {
+  height: 5px;
+}
+
 @media only screen and (max-width : 640px) {
 
 	header {
@@ -407,14 +434,10 @@ nav {
   }
 
   .have-list {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 
   .list-room {
     margin-bottom: 10px;
-  }
-
-  .footer {
-    position: inherit
   }
 }

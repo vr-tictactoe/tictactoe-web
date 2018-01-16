@@ -12,7 +12,7 @@ class SelectAvatar extends Component {
   constructor() {
     super()
     this.state = {
-      avatar: 'AVATAR',
+      avatar: 'avatar',
       classAvatar1: 'avatar avatar-select',
       classAvatar2: 'avatar avatar-select'
     }
@@ -86,16 +86,20 @@ class SelectAvatar extends Component {
   }
 
   selectAvatar() {
-    db.ref('users').once('value', allUser => {
-      for(let user in allUser.val()){
-        if(localStorage.getItem('uid') === allUser.val()[user].uid){
-          db.ref('users').child(user).update({
-            avatar: `${this.state.avatar}.png`
-          })
+    if(this.state.avatar === 'avatar') {
+      alert('Select Your Avatar!!!')
+    } else {
+      db.ref('users').once('value', allUser => {
+        for(let user in allUser.val()){
+          if(localStorage.getItem('uid') === allUser.val()[user].uid){
+            db.ref('users').child(user).update({
+              avatar: `${this.state.avatar}.png`
+            })
+          }
         }
-      }
-    })
-    this.props.history.push('/play')
+      })
+      this.props.history.push('/play')
+    }
   }
 
   render() {
@@ -107,9 +111,8 @@ class SelectAvatar extends Component {
           <img onClick={() => this.handleAvatar1()} className={this.state.classAvatar1} src='../assets/img/astro.png' alt='astro' />
           <img onClick={() => this.handleAvatar2()} className={this.state.classAvatar2} src='../assets/img/alien.png' alt='alien' />
           <br />
-          <span className='avatar-name'>{avatar.toUpperCase()}</span>
         </div>
-        <button onClick={() => this.selectAvatar()} type="button" className="v-button avatar-button">SELECT</button>
+        <button onClick={() => this.selectAvatar()} type="button" className="v-button avatar-button">{avatar.toUpperCase()}</button>
       </div>
     )
   }
