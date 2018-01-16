@@ -35,11 +35,11 @@ body h1 {
 .v-button {
   margin-top: -15px;
   border-radius: 30px;
-  border: 0.6px solid #306fd9; 
+  border: 0.6px solid #388E3C; 
   font-family: CuprumBold; 
   font-size: 20px;
-  background: #fff;
-  color: #306fd9;
+  background: #388E3C;
+  color: white;
   width: 220px;
   padding: 10px 0px;
   align-self: center;
@@ -49,10 +49,10 @@ body h1 {
 .active-button {
   margin-top: -15px;
   border-radius: 30px;
-  border: 0.6px solid #306fd9; 
+  border: 0.6px solid orange; 
   font-family: CuprumBold; 
   font-size: 20px;
-  background: red;
+  background: orange;
   color: white;
   width: 220px;
   padding: 10px 0px;
