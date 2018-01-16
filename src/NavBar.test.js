@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './Components/NavBar';
 import JoinRoom from './Components/JoinRoom';
+import {Route} from 'react-router-dom'
+import LoginForm from './Components/LoginForm'
+import App from './App';
 import { configure, shallow, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
@@ -30,5 +33,14 @@ describe('Testing the NavBar', () => {
     const nav = wrapper.find('nav')
     expect(nav).toBeDefined()
   })
-  test()
+  test('It Should have Login Form', () => {
+    const app = shallow(<App />)
+    const loginForm = app.find(<Route exact path="/" component={LoginForm} />)
+    expect(loginForm).toMatchSnapshot()
+  })
+  test('App should have PlayGame', () => {
+    const app = shallow(<App />)
+    const playGame = app.find(<Route exact path="/play" render={() => <NavBar><PlayGame /></NavBar>} />)
+    expect(playGame).toMatchSnapshot()
+  })
 })
