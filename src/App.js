@@ -17,7 +17,8 @@ import SelectAvatar from './Components/SelectAvatar';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import History from './Components/History';
-import Login from './Components/Login'
+import Login from './Components/Login';
+import LeaderBoard from './Components/Leaderboard';
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
             <Route path ="/play/create" render={() => <NavBar><CreateRoom/></NavBar>} />
             <Route path ="/play/join" render={() => <NavBar><JoinRoom/></NavBar>} />
             <Route path="/history" component={History} />
+            <Route path="/leaderboard" component={LeaderBoard} />
             <Footer/> 
           </div>
         </Router>
