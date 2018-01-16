@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import ReactLoading from 'react-loading';
+import Spinner from 'react-spinkit'
 
 import {getHistory, getHistoryAPI} from '../actions';
 
@@ -29,12 +30,10 @@ class History extends Component {
     return (
       <div  className='col-md-8 offset-md-2 login-page history'>
         {
-          this.state.loading ? <div className='loading'> 
-          <ReactLoading style={{ 'align-self': 'center' }} height='50' type="spin" color="#5a4263" />
-          </div>
+          this.state.loading ? <div className='loading'><Spinner name="ball-pulse-sync" color="#fff" fadeIn="none"/></div>
             : <div><h1>THE RECORDS</h1>
               <div className='list-room'>
-              <table className="table">
+              <table className="table vr-table">
                 <thead>
                   <tr>
                     <th scope="col">Player 1</th>
@@ -53,7 +52,6 @@ class History extends Component {
               })}
               </table>
               </div>
-              <br/>
               <Link to="/"><button className="back-button"></button></Link>
               </div>
         }
