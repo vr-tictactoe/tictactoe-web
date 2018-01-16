@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   font-family: Cuprum;
+  height:100vh;
 }
 
 @font-face {
@@ -180,12 +181,16 @@ body h1 {
 }
 
 .wrap-content {
-  margin-top: 30px;
+  margin-top: 150px;
   padding: 40px 15px 50px 15px;
 }
 
 .wrap-content h1 {
   font-size: 40px;
+}
+
+.have-list {
+  margin-top: 110px;
 }
 
 .loading {
@@ -199,6 +204,7 @@ body h1 {
   font-size: 22px;
   color: #fff;
   padding: 2rem;
+  position: fixed;
 }
 
 .list-room {
@@ -292,7 +298,9 @@ body h1 {
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
-  padding-left: 40px;
+  padding-left: 40px;.login-page {
+    margin-top: 60px;
+}
 }
 
 .avatar-button:hover {
@@ -315,6 +323,8 @@ div#navbarColor01 {
   color: #fff;
   width: 100px;
   background-color: rgb(255, 46, 46);
+  padding: 5px 0;
+  margin-top: 1px;
 }
 
 .avatar {
@@ -342,15 +352,69 @@ div#navbarColor01 {
   font-size: 20px;
 }
 
-@media only screen and (min-device-width: 720px) {
-  .footer {
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 22px;
-    color: #fff;
-    padding: 2rem;
+header {
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
 
+#logo{
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background: url(./assets/img/single-logo.png) no-repeat center;
+	display: block;
+}
+
+nav {
+	float: right;
+	padding: 20px;	
+}
+
+@media only screen and (max-width : 640px) {
+
+	header {
+		position: absolute;
+  }
+  
+  #logo{
+    display: none;
+  }
+
+	#menu-icon {
+		display:inline-block;
+  }
+  
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-page {
+    margin-top: 60px;
+  }
+  
+  .login-area {
+    padding-top: 40px;
+  }
+
+  .wrap-content {
+    margin-top: 60px;
+  }
+
+  .have-list {
+    margin-top: 100px;
+  }
+
+  .list-room {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    position: inherit
   }
 }

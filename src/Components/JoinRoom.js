@@ -73,7 +73,7 @@ export default class JoinRoom extends Component {
 
   render () {
     return (
-      <div className='col-md-8 offset-md-2'>
+      <div className='col-md-8 offset-md-2 have-list'>
         <h1>Select Room</h1>
         <div className="list-room" data-toggle="buttons">
           {

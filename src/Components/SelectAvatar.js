@@ -101,7 +101,7 @@ class SelectAvatar extends Component {
   render() {
     let avatar = this.state.avatar
     return (
-      <div className='col-md-6 offset-md-3'>
+      <div className='col-md-6 offset-md-3 have-list'>
         <h1>Select Your Avatar</h1>
         <div className='list-avatar'>
           <img onClick={() => this.handleAvatar1()} className={this.state.classAvatar1} src='../assets/img/astro.png' alt='astro' />
