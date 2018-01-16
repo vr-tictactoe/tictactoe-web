@@ -59,11 +59,22 @@ export default class JoinRoom extends Component {
     db.ref('games').on('value', snapshot => {
       let allGames = []
       for(let game in snapshot.val()){
-        let objGame= {
-          gameName: snapshot.val()[game].roomName,
-          gameId: game
+        if(snapshot.val()[game].winner === '' && snapshot.val()[game].gameStatus === ''){
+          let objGame= {
+            gameName: snapshot.val()[game].roomName,
+            gameId: game,
+            roomStatus: 'join-list-btn v-button'
+          }
+          allGames.unshift(objGame)
+        }else if(snapshot.val()[game].winner === '' && snapshot.val()[game].gameStatus === 'Ready'){
+           let objGame= {
+            gameName: snapshot.val()[game].roomName,
+            gameId: game,
+            roomStatus: 'join-list-btn active-button'
+
+          }
+          allGames.push(objGame)         
         }
-        allGames.push(objGame)
       }
       this.setState({
         games: allGames
@@ -78,7 +89,7 @@ export default class JoinRoom extends Component {
         <div className="list-room" data-toggle="buttons">
           {
             this.state.games.map(game => {
-              return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
+              return <button type="button" className={game.roomStatus} onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
             })
           }
         </div>
