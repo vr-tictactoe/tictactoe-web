@@ -63,7 +63,7 @@ export default class JoinRoom extends Component {
           let objGame= {
             gameName: snapshot.val()[game].roomName,
             gameId: game,
-            roomStatus: 'join-list-btn v-button'
+            roomStatus: 'join-list-btn waiting-button'
           }
           allGames.unshift(objGame)
         }else if(snapshot.val()[game].winner === '' && snapshot.val()[game].gameStatus === 'Ready'){
@@ -73,7 +73,7 @@ export default class JoinRoom extends Component {
             roomStatus: 'join-list-btn active-button'
 
           }
-          allGames.push(objGame)         
+          allGames.push(objGame)
         }
       }
       this.setState({

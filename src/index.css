@@ -35,22 +35,44 @@ body h1 {
 .v-button {
   margin-top: -15px;
   border-radius: 30px;
-  border: 0.6px solid #388E3C; 
-  font-family: CuprumBold; 
+  border: 0.6px solid #306fd9;
+  font-family: CuprumBold;
   font-size: 20px;
-  background: #388E3C;
-  color: white;
+  background: #fff;
+  color: #306fd9;
   width: 220px;
   padding: 10px 0px;
   align-self: center;
   text-decoration: none;
 }
 
+.waiting-button {
+  margin-top: -15px;
+  border-radius: 30px;
+  border: 0.6px solid #388E3C;
+  font-family: CuprumBold;
+  font-size: 20px;
+  background: #388E3C;
+  color: #fff;
+  width: 220px;
+  padding: 10px 0px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.waiting-button:hover,
+.waiting-button:focus {
+  background: #689F38;
+  border-color: #689F38;
+}
+
+
+
 .active-button {
   margin-top: -15px;
   border-radius: 30px;
-  border: 0.6px solid orange; 
-  font-family: CuprumBold; 
+  border: 0.6px solid orange;
+  font-family: CuprumBold;
   font-size: 20px;
   background: orange;
   color: white;
@@ -58,6 +80,12 @@ body h1 {
   padding: 10px 0px;
   align-self: center;
   text-decoration: none;
+}
+
+.active-button:hover,
+.active-button:focus {
+  background: #FF5722;
+  border-color: #FF5722;
 }
 
 .active-button:focus {
@@ -134,10 +162,10 @@ body h1 {
 }
 
 .back-button {
-  width: 40px; 
-  height: 40px; 
-  background-color: #fff; 
-  border-radius: 100%; 
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 100%;
   border: none;
   background-image: url('./assets/img/back.png');
   background-repeat: no-repeat;
@@ -249,10 +277,10 @@ body h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(47, 49, 168, 0.3); 
+  background-color: rgba(47, 49, 168, 0.3);
   border-radius: 20px;
 }
- 
+
 ::-webkit-scrollbar-button {
   display: none;
 }
@@ -337,7 +365,7 @@ div#navbarColor01 {
 }
 
 .avatar {
-  margin: 5px 10px; 
+  margin: 5px 10px;
 }
 
 .avatar-select {
