@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { db } from '../firebase.js'
 import { VR_URL } from '../constant'
+import Spinner from 'react-spinkit'
 
 export default class JoinRoom extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class JoinRoom extends Component {
       gameKeyDummy: '',
       type: '',
       games: [],
+      loading: true
     }
   }
 
@@ -30,7 +32,8 @@ export default class JoinRoom extends Component {
             name: this.state.player.name,
             uid: this.state.player.uid,
             type: 'O',
-            avatar: this.state.player.avatar
+            avatar: this.state.player.avatar,
+            status: 'Not Ready'
           }
         })
 
@@ -58,30 +61,48 @@ export default class JoinRoom extends Component {
     db.ref('games').on('value', snapshot => {
       let allGames = []
       for(let game in snapshot.val()){
-        let objGame= {
-          gameName: snapshot.val()[game].roomName,
-          gameId: game
+        if(snapshot.val()[game].winner === '' && snapshot.val()[game].gameStatus === ''){
+          let objGame= {
+            gameName: snapshot.val()[game].roomName,
+            gameId: game,
+            roomStatus: 'join-list-btn waiting-button'
+          }
+          allGames.unshift(objGame)
+        }else if(snapshot.val()[game].winner === '' && snapshot.val()[game].gameStatus === 'Ready'){
+           let objGame= {
+            gameName: snapshot.val()[game].roomName,
+            gameId: game,
+            roomStatus: 'join-list-btn active-button'
+
+          }
+          allGames.push(objGame)
         }
-        allGames.push(objGame)
       }
       this.setState({
-        games: allGames
+        games: allGames,
+        loading: false
       })
     })
   }
 
   render () {
     return (
-      <div className='col-md-8 offset-md-2'>
-        <h1>Select Room</h1>
-        <div className="list-room" data-toggle="buttons">
-          {
-            this.state.games.map(game => {
-              return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
-            })
-          }
-        </div>
-        <Link to="/play"><button className='back-button'></button></Link>
+      <div className='col-md-8 offset-md-2 have-list'>
+        {
+          this.state.loading ? <div className='loading'><Spinner name="ball-pulse-sync" color="#fff"/></div>
+          :
+          <div>
+            <h1>Select Room</h1>
+            <div className="list-room" data-toggle="buttons">
+              {
+                this.state.games.map(game => {
+                  return <button type="button" className="join-list-btn v-button" onClick={()=> this.joinRoom(game.gameId)}>{game.gameName}</button>
+                })
+              }
+            </div>
+            <Link to="/play"><button className='back-button'></button></Link>
+          </div>
+        }
       </div>
     )
   }

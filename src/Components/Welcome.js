@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../firebase.js'
 import firebase from 'firebase'
+import Spinner from 'react-spinkit'
 
 export default class Welcome extends Component {
+  constructor() {
+    super()
+    this.state = {
+      loading: false
+    }
+  }
 
   checkIsLogin() {
+    this.setState({loading: true})
     db.ref('users').orderByChild('uid').equalTo(localStorage.getItem('uid')).once('value', snaphotUser => {
       console.log(snaphotUser.val())
       if(snaphotUser.val() !== null){
@@ -26,6 +34,7 @@ export default class Welcome extends Component {
             <div>
               <button onClick={() => this.checkIsLogin()} type="submit" className='v-button play-button'>PLAY NOW</button><br />
               <button onClick={() => this.props.history.push('/history')} type="submit" className='v-button history-button'>HISTORY</button>
+              <button onClick={() => this.props.history.push('/leaderboard')} type="submit" className='v-button history-button'>LEADERBOARD</button>
             </div>
           </div>
         </div>

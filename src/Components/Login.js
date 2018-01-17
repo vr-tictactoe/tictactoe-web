@@ -42,10 +42,12 @@ export default class LoginButton extends Component {
 
   render() {
     return (
-      <div className='col-md-4 offset-md-4 wrap-content'>
+      <div className='col-md-6 offset-md-3 login-page'>
         <img className='logo' src='./assets/img/virtoe-logo.png' alt='logo'/>
-        <h1>Login Before Play</h1>
-        <div id="firebaseui-auth-container"></div>
+        <div className='login-area'>
+          <h1>LOGIN BEFORE PLAY</h1>
+          <div id="firebaseui-auth-container"></div>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,4520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the NavBar App should have CreateRoom 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <App />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="App"
+>
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+          />
+          <Route
+                    path="/avatar"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/play"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/create"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/join"
+                    render={[Function]}
+          />
+          <Footer />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+/>,
+            <Route
+              path="/avatar"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/play"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/create"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/join"
+              render={[Function]}
+/>,
+            <Footer />,
+          ],
+          "className": "App",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/avatar",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/play",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/create",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/join",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="App"
+>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        path="/avatar"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/play"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/create"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/join"
+                        render={[Function]}
+            />
+            <Footer />
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                path="/avatar"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/play"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/create"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/join"
+                render={[Function]}
+/>,
+              <Footer />,
+            ],
+            "className": "App",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/avatar",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/play",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/create",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/join",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar App should have Footer 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <App />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="App"
+>
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+          />
+          <Route
+                    path="/avatar"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/play"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/create"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/join"
+                    render={[Function]}
+          />
+          <Footer />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+/>,
+            <Route
+              path="/avatar"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/play"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/create"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/join"
+              render={[Function]}
+/>,
+            <Footer />,
+          ],
+          "className": "App",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/avatar",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/play",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/create",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/join",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="App"
+>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        path="/avatar"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/play"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/create"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/join"
+                        render={[Function]}
+            />
+            <Footer />
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                path="/avatar"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/play"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/create"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/join"
+                render={[Function]}
+/>,
+              <Footer />,
+            ],
+            "className": "App",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/avatar",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/play",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/create",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/join",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar App should have JoinRoom 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <App />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="App"
+>
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+          />
+          <Route
+                    path="/avatar"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/play"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/create"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/join"
+                    render={[Function]}
+          />
+          <Footer />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+/>,
+            <Route
+              path="/avatar"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/play"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/create"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/join"
+              render={[Function]}
+/>,
+            <Footer />,
+          ],
+          "className": "App",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/avatar",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/play",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/create",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/join",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="App"
+>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        path="/avatar"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/play"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/create"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/join"
+                        render={[Function]}
+            />
+            <Footer />
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                path="/avatar"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/play"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/create"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/join"
+                render={[Function]}
+/>,
+              <Footer />,
+            ],
+            "className": "App",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/avatar",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/play",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/create",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/join",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar App should have PlayGame 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <App />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="App"
+>
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+          />
+          <Route
+                    path="/avatar"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/play"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/create"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/join"
+                    render={[Function]}
+          />
+          <Footer />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+/>,
+            <Route
+              path="/avatar"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/play"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/create"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/join"
+              render={[Function]}
+/>,
+            <Footer />,
+          ],
+          "className": "App",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/avatar",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/play",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/create",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/join",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="App"
+>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        path="/avatar"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/play"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/create"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/join"
+                        render={[Function]}
+            />
+            <Footer />
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                path="/avatar"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/play"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/create"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/join"
+                render={[Function]}
+/>,
+              <Footer />,
+            ],
+            "className": "App",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/avatar",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/play",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/create",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/join",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar App should have PlayGame 2`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <App />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="App"
+>
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+          />
+          <Route
+                    path="/avatar"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/play"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/create"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/join"
+                    render={[Function]}
+          />
+          <Footer />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+/>,
+            <Route
+              path="/avatar"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/play"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/create"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/join"
+              render={[Function]}
+/>,
+            <Footer />,
+          ],
+          "className": "App",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/avatar",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/play",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/create",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/join",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="App"
+>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        path="/avatar"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/play"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/create"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/join"
+                        render={[Function]}
+            />
+            <Footer />
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                path="/avatar"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/play"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/create"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/join"
+                render={[Function]}
+/>,
+              <Footer />,
+            ],
+            "className": "App",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/avatar",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/play",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/create",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/join",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar App should have Select Avatar 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <App />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="App"
+>
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+          />
+          <Route
+                    path="/avatar"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/play"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/create"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/join"
+                    render={[Function]}
+          />
+          <Footer />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+/>,
+            <Route
+              path="/avatar"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/play"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/create"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/join"
+              render={[Function]}
+/>,
+            <Footer />,
+          ],
+          "className": "App",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/avatar",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/play",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/create",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/join",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="App"
+>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        path="/avatar"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/play"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/create"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/join"
+                        render={[Function]}
+            />
+            <Footer />
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                path="/avatar"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/play"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/create"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/join"
+                render={[Function]}
+/>,
+              <Footer />,
+            ],
+            "className": "App",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/avatar",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/play",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/create",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/join",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar It Should have Login Form 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <App />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="App"
+>
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/"
+          />
+          <Route
+                    path="/avatar"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/play"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/create"
+                    render={[Function]}
+          />
+          <Route
+                    path="/play/join"
+                    render={[Function]}
+          />
+          <Footer />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+/>,
+            <Route
+              path="/avatar"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/play"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/create"
+              render={[Function]}
+/>,
+            <Route
+              path="/play/join"
+              render={[Function]}
+/>,
+            <Footer />,
+          ],
+          "className": "App",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/avatar",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/play",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/create",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/play/join",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="App"
+>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        path="/avatar"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/play"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/create"
+                        render={[Function]}
+            />
+            <Route
+                        path="/play/join"
+                        render={[Function]}
+            />
+            <Footer />
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                path="/avatar"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/play"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/create"
+                render={[Function]}
+/>,
+              <Route
+                path="/play/join"
+                render={[Function]}
+/>,
+              <Footer />,
+            ],
+            "className": "App",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/avatar",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/play",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/create",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/play/join",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar It should render the button 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <button
+    aria-controls="navbarColor01"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    className="navbar-toggler"
+    data-target="#navbarColor01"
+    data-toggle="collapse"
+    type="button"
+>
+    <span
+        className="navbar-toggler-icon"
+    />
+</button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "aria-controls": "navbarColor01",
+      "aria-expanded": "false",
+      "aria-label": "Toggle navigation",
+      "children": <span
+        className="navbar-toggler-icon"
+/>,
+      "className": "navbar-toggler",
+      "data-target": "#navbarColor01",
+      "data-toggle": "collapse",
+      "type": "button",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "className": "navbar-toggler-icon",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "span",
+    },
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "aria-controls": "navbarColor01",
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation",
+        "children": <span
+          className="navbar-toggler-icon"
+/>,
+        "className": "navbar-toggler",
+        "data-target": "#navbarColor01",
+        "data-toggle": "collapse",
+        "type": "button",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "navbar-toggler-icon",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "span",
+      },
+      "type": "button",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar It should render the form 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <form
+    className="form-inline my-2 my-lg-0"
+>
+    <button
+        className="btn btn-danger my-2 my-sm-0"
+        type="submit"
+    >
+        Logout
+    </button>
+</form>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <button
+        className="btn btn-danger my-2 my-sm-0"
+        type="submit"
+>
+        Logout
+</button>,
+      "className": "form-inline my-2 my-lg-0",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Logout",
+        "className": "btn btn-danger my-2 my-sm-0",
+        "type": "submit",
+      },
+      "ref": null,
+      "rendered": "Logout",
+      "type": "button",
+    },
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <button
+          className="btn btn-danger my-2 my-sm-0"
+          type="submit"
+>
+          Logout
+</button>,
+        "className": "form-inline my-2 my-lg-0",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Logout",
+          "className": "btn btn-danger my-2 my-sm-0",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": "button",
+      },
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar LoginForm should have Facebook Login 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <LoginForm />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="col-md-6 offset-md-3 login-page"
+>
+          <img
+                    alt="logo"
+                    className="logo"
+                    src="./assets/img/virtoe-logo.png"
+          />
+          <div
+                    className="login-area"
+          >
+                    <p
+                              style={
+                                        Object {
+                                                  "fontFamily": "CuprumBold",
+                                                  "fontSize": "30px",
+                                                }
+                              }
+                    >
+                              LET'S PLAY THE GAME
+                    </p>
+                    <div>
+                              <button
+                                        className="v-button play-button"
+                                        onClick={[Function]}
+                                        type="submit"
+                              >
+                                        PLAY NOW
+                              </button>
+                              <br />
+                              <button
+                                        className="v-button history-button"
+                                        type="submit"
+                              >
+                                        HISTORY
+                              </button>
+                    </div>
+          </div>
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="logo"
+              className="logo"
+              src="./assets/img/virtoe-logo.png"
+/>,
+            <div
+              className="login-area"
+>
+              <p
+                            style={
+                                          Object {
+                                                        "fontFamily": "CuprumBold",
+                                                        "fontSize": "30px",
+                                                      }
+                            }
+              >
+                            LET'S PLAY THE GAME
+              </p>
+              <div>
+                            <button
+                                          className="v-button play-button"
+                                          onClick={[Function]}
+                                          type="submit"
+                            >
+                                          PLAY NOW
+                            </button>
+                            <br />
+                            <button
+                                          className="v-button history-button"
+                                          type="submit"
+                            >
+                                          HISTORY
+                            </button>
+              </div>
+</div>,
+          ],
+          "className": "col-md-6 offset-md-3 login-page",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "logo",
+              "className": "logo",
+              "src": "./assets/img/virtoe-logo.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  style={
+                                    Object {
+                                                      "fontFamily": "CuprumBold",
+                                                      "fontSize": "30px",
+                                                    }
+                  }
+>
+                  LET'S PLAY THE GAME
+</p>,
+                <div>
+                  <button
+                                    className="v-button play-button"
+                                    onClick={[Function]}
+                                    type="submit"
+                  >
+                                    PLAY NOW
+                  </button>
+                  <br />
+                  <button
+                                    className="v-button history-button"
+                                    type="submit"
+                  >
+                                    HISTORY
+                  </button>
+</div>,
+              ],
+              "className": "login-area",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "LET'S PLAY THE GAME",
+                  "style": Object {
+                    "fontFamily": "CuprumBold",
+                    "fontSize": "30px",
+                  },
+                },
+                "ref": null,
+                "rendered": "LET'S PLAY THE GAME",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      className="v-button play-button"
+                      onClick={[Function]}
+                      type="submit"
+>
+                      PLAY NOW
+</button>,
+                    <br />,
+                    <button
+                      className="v-button history-button"
+                      type="submit"
+>
+                      HISTORY
+</button>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "PLAY NOW",
+                      "className": "v-button play-button",
+                      "onClick": [Function],
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "PLAY NOW",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "HISTORY",
+                      "className": "v-button history-button",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "HISTORY",
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="col-md-6 offset-md-3 login-page"
+>
+            <img
+                        alt="logo"
+                        className="logo"
+                        src="./assets/img/virtoe-logo.png"
+            />
+            <div
+                        className="login-area"
+            >
+                        <p
+                                    style={
+                                                Object {
+                                                            "fontFamily": "CuprumBold",
+                                                            "fontSize": "30px",
+                                                          }
+                                    }
+                        >
+                                    LET'S PLAY THE GAME
+                        </p>
+                        <div>
+                                    <button
+                                                className="v-button play-button"
+                                                onClick={[Function]}
+                                                type="submit"
+                                    >
+                                                PLAY NOW
+                                    </button>
+                                    <br />
+                                    <button
+                                                className="v-button history-button"
+                                                type="submit"
+                                    >
+                                                HISTORY
+                                    </button>
+                        </div>
+            </div>
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="logo"
+                className="logo"
+                src="./assets/img/virtoe-logo.png"
+/>,
+              <div
+                className="login-area"
+>
+                <p
+                                style={
+                                                Object {
+                                                                "fontFamily": "CuprumBold",
+                                                                "fontSize": "30px",
+                                                              }
+                                }
+                >
+                                LET'S PLAY THE GAME
+                </p>
+                <div>
+                                <button
+                                                className="v-button play-button"
+                                                onClick={[Function]}
+                                                type="submit"
+                                >
+                                                PLAY NOW
+                                </button>
+                                <br />
+                                <button
+                                                className="v-button history-button"
+                                                type="submit"
+                                >
+                                                HISTORY
+                                </button>
+                </div>
+</div>,
+            ],
+            "className": "col-md-6 offset-md-3 login-page",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "className": "logo",
+                "src": "./assets/img/virtoe-logo.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    style={
+                                        Object {
+                                                            "fontFamily": "CuprumBold",
+                                                            "fontSize": "30px",
+                                                          }
+                    }
+>
+                    LET'S PLAY THE GAME
+</p>,
+                  <div>
+                    <button
+                                        className="v-button play-button"
+                                        onClick={[Function]}
+                                        type="submit"
+                    >
+                                        PLAY NOW
+                    </button>
+                    <br />
+                    <button
+                                        className="v-button history-button"
+                                        type="submit"
+                    >
+                                        HISTORY
+                    </button>
+</div>,
+                ],
+                "className": "login-area",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "LET'S PLAY THE GAME",
+                    "style": Object {
+                      "fontFamily": "CuprumBold",
+                      "fontSize": "30px",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "LET'S PLAY THE GAME",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <button
+                        className="v-button play-button"
+                        onClick={[Function]}
+                        type="submit"
+>
+                        PLAY NOW
+</button>,
+                      <br />,
+                      <button
+                        className="v-button history-button"
+                        type="submit"
+>
+                        HISTORY
+</button>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "PLAY NOW",
+                        "className": "v-button play-button",
+                        "onClick": [Function],
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "rendered": "PLAY NOW",
+                      "type": "button",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "HISTORY",
+                        "className": "v-button history-button",
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "rendered": "HISTORY",
+                      "type": "button",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar LoginForm should have button History 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <LoginForm />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="col-md-6 offset-md-3 login-page"
+>
+          <img
+                    alt="logo"
+                    className="logo"
+                    src="./assets/img/virtoe-logo.png"
+          />
+          <div
+                    className="login-area"
+          >
+                    <p
+                              style={
+                                        Object {
+                                                  "fontFamily": "CuprumBold",
+                                                  "fontSize": "30px",
+                                                }
+                              }
+                    >
+                              LET'S PLAY THE GAME
+                    </p>
+                    <div>
+                              <button
+                                        className="v-button play-button"
+                                        onClick={[Function]}
+                                        type="submit"
+                              >
+                                        PLAY NOW
+                              </button>
+                              <br />
+                              <button
+                                        className="v-button history-button"
+                                        type="submit"
+                              >
+                                        HISTORY
+                              </button>
+                    </div>
+          </div>
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="logo"
+              className="logo"
+              src="./assets/img/virtoe-logo.png"
+/>,
+            <div
+              className="login-area"
+>
+              <p
+                            style={
+                                          Object {
+                                                        "fontFamily": "CuprumBold",
+                                                        "fontSize": "30px",
+                                                      }
+                            }
+              >
+                            LET'S PLAY THE GAME
+              </p>
+              <div>
+                            <button
+                                          className="v-button play-button"
+                                          onClick={[Function]}
+                                          type="submit"
+                            >
+                                          PLAY NOW
+                            </button>
+                            <br />
+                            <button
+                                          className="v-button history-button"
+                                          type="submit"
+                            >
+                                          HISTORY
+                            </button>
+              </div>
+</div>,
+          ],
+          "className": "col-md-6 offset-md-3 login-page",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "logo",
+              "className": "logo",
+              "src": "./assets/img/virtoe-logo.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  style={
+                                    Object {
+                                                      "fontFamily": "CuprumBold",
+                                                      "fontSize": "30px",
+                                                    }
+                  }
+>
+                  LET'S PLAY THE GAME
+</p>,
+                <div>
+                  <button
+                                    className="v-button play-button"
+                                    onClick={[Function]}
+                                    type="submit"
+                  >
+                                    PLAY NOW
+                  </button>
+                  <br />
+                  <button
+                                    className="v-button history-button"
+                                    type="submit"
+                  >
+                                    HISTORY
+                  </button>
+</div>,
+              ],
+              "className": "login-area",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "LET'S PLAY THE GAME",
+                  "style": Object {
+                    "fontFamily": "CuprumBold",
+                    "fontSize": "30px",
+                  },
+                },
+                "ref": null,
+                "rendered": "LET'S PLAY THE GAME",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      className="v-button play-button"
+                      onClick={[Function]}
+                      type="submit"
+>
+                      PLAY NOW
+</button>,
+                    <br />,
+                    <button
+                      className="v-button history-button"
+                      type="submit"
+>
+                      HISTORY
+</button>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "PLAY NOW",
+                      "className": "v-button play-button",
+                      "onClick": [Function],
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "PLAY NOW",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "HISTORY",
+                      "className": "v-button history-button",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "HISTORY",
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="col-md-6 offset-md-3 login-page"
+>
+            <img
+                        alt="logo"
+                        className="logo"
+                        src="./assets/img/virtoe-logo.png"
+            />
+            <div
+                        className="login-area"
+            >
+                        <p
+                                    style={
+                                                Object {
+                                                            "fontFamily": "CuprumBold",
+                                                            "fontSize": "30px",
+                                                          }
+                                    }
+                        >
+                                    LET'S PLAY THE GAME
+                        </p>
+                        <div>
+                                    <button
+                                                className="v-button play-button"
+                                                onClick={[Function]}
+                                                type="submit"
+                                    >
+                                                PLAY NOW
+                                    </button>
+                                    <br />
+                                    <button
+                                                className="v-button history-button"
+                                                type="submit"
+                                    >
+                                                HISTORY
+                                    </button>
+                        </div>
+            </div>
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="logo"
+                className="logo"
+                src="./assets/img/virtoe-logo.png"
+/>,
+              <div
+                className="login-area"
+>
+                <p
+                                style={
+                                                Object {
+                                                                "fontFamily": "CuprumBold",
+                                                                "fontSize": "30px",
+                                                              }
+                                }
+                >
+                                LET'S PLAY THE GAME
+                </p>
+                <div>
+                                <button
+                                                className="v-button play-button"
+                                                onClick={[Function]}
+                                                type="submit"
+                                >
+                                                PLAY NOW
+                                </button>
+                                <br />
+                                <button
+                                                className="v-button history-button"
+                                                type="submit"
+                                >
+                                                HISTORY
+                                </button>
+                </div>
+</div>,
+            ],
+            "className": "col-md-6 offset-md-3 login-page",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "className": "logo",
+                "src": "./assets/img/virtoe-logo.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    style={
+                                        Object {
+                                                            "fontFamily": "CuprumBold",
+                                                            "fontSize": "30px",
+                                                          }
+                    }
+>
+                    LET'S PLAY THE GAME
+</p>,
+                  <div>
+                    <button
+                                        className="v-button play-button"
+                                        onClick={[Function]}
+                                        type="submit"
+                    >
+                                        PLAY NOW
+                    </button>
+                    <br />
+                    <button
+                                        className="v-button history-button"
+                                        type="submit"
+                    >
+                                        HISTORY
+                    </button>
+</div>,
+                ],
+                "className": "login-area",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "LET'S PLAY THE GAME",
+                    "style": Object {
+                      "fontFamily": "CuprumBold",
+                      "fontSize": "30px",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "LET'S PLAY THE GAME",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <button
+                        className="v-button play-button"
+                        onClick={[Function]}
+                        type="submit"
+>
+                        PLAY NOW
+</button>,
+                      <br />,
+                      <button
+                        className="v-button history-button"
+                        type="submit"
+>
+                        HISTORY
+</button>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "PLAY NOW",
+                        "className": "v-button play-button",
+                        "onClick": [Function],
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "rendered": "PLAY NOW",
+                      "type": "button",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "HISTORY",
+                        "className": "v-button history-button",
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "rendered": "HISTORY",
+                      "type": "button",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar LoginForm should have image 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <div
+      className="col-md-6 offset-md-3 login-page"
+/>,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "className": "col-md-6 offset-md-3 login-page",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "col-md-6 offset-md-3 login-page",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar Play Game should have button Join 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <PlayGame />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Welcome To The Game
+</h1>,
+          <div
+            className="button-area"
+>
+            <Link
+                        replace={false}
+                        to="/play/create"
+            >
+                        <button
+                                    className="v-button new-button"
+                                    type="button"
+                        >
+                                    NEW GAME
+                        </button>
+            </Link>
+            <br />
+            <Link
+                        replace={false}
+                        to="/play/join"
+            >
+                        <button
+                                    className="v-button join-button"
+                                    type="button"
+                        >
+                                    JOIN ROOM
+                        </button>
+            </Link>
+</div>,
+          undefined,
+        ],
+        "className": "col-md-4 offset-md-4 wrap-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Welcome To The Game",
+          },
+          "ref": null,
+          "rendered": "Welcome To The Game",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                replace={false}
+                to="/play/create"
+>
+                <button
+                                className="v-button new-button"
+                                type="button"
+                >
+                                NEW GAME
+                </button>
+</Link>,
+              <br />,
+              <Link
+                replace={false}
+                to="/play/join"
+>
+                <button
+                                className="v-button join-button"
+                                type="button"
+                >
+                                JOIN ROOM
+                </button>
+</Link>,
+            ],
+            "className": "button-area",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="v-button new-button"
+                  type="button"
+>
+                  NEW GAME
+</button>,
+                "replace": false,
+                "to": "/play/create",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NEW GAME",
+                  "className": "v-button new-button",
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "NEW GAME",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="v-button join-button"
+                  type="button"
+>
+                  JOIN ROOM
+</button>,
+                "replace": false,
+                "to": "/play/join",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "JOIN ROOM",
+                  "className": "v-button join-button",
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "JOIN ROOM",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        undefined,
+      ],
+      "type": "div",
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Welcome To The Game
+</h1>,
+            <div
+              className="button-area"
+>
+              <Link
+                            replace={false}
+                            to="/play/create"
+              >
+                            <button
+                                          className="v-button new-button"
+                                          type="button"
+                            >
+                                          NEW GAME
+                            </button>
+              </Link>
+              <br />
+              <Link
+                            replace={false}
+                            to="/play/join"
+              >
+                            <button
+                                          className="v-button join-button"
+                                          type="button"
+                            >
+                                          JOIN ROOM
+                            </button>
+              </Link>
+</div>,
+            undefined,
+          ],
+          "className": "col-md-4 offset-md-4 wrap-content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Welcome To The Game",
+            },
+            "ref": null,
+            "rendered": "Welcome To The Game",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  replace={false}
+                  to="/play/create"
+>
+                  <button
+                                    className="v-button new-button"
+                                    type="button"
+                  >
+                                    NEW GAME
+                  </button>
+</Link>,
+                <br />,
+                <Link
+                  replace={false}
+                  to="/play/join"
+>
+                  <button
+                                    className="v-button join-button"
+                                    type="button"
+                  >
+                                    JOIN ROOM
+                  </button>
+</Link>,
+              ],
+              "className": "button-area",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="v-button new-button"
+                    type="button"
+>
+                    NEW GAME
+</button>,
+                  "replace": false,
+                  "to": "/play/create",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "NEW GAME",
+                    "className": "v-button new-button",
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": "NEW GAME",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="v-button join-button"
+                    type="button"
+>
+                    JOIN ROOM
+</button>,
+                  "replace": false,
+                  "to": "/play/join",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "JOIN ROOM",
+                    "className": "v-button join-button",
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": "JOIN ROOM",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          undefined,
+        ],
+        "type": "div",
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar Play Game should have button to Play New Game 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <PlayGame />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Welcome To The Game
+</h1>,
+          <div
+            className="button-area"
+>
+            <Link
+                        replace={false}
+                        to="/play/create"
+            >
+                        <button
+                                    className="v-button new-button"
+                                    type="button"
+                        >
+                                    NEW GAME
+                        </button>
+            </Link>
+            <br />
+            <Link
+                        replace={false}
+                        to="/play/join"
+            >
+                        <button
+                                    className="v-button join-button"
+                                    type="button"
+                        >
+                                    JOIN ROOM
+                        </button>
+            </Link>
+</div>,
+          undefined,
+        ],
+        "className": "col-md-4 offset-md-4 wrap-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Welcome To The Game",
+          },
+          "ref": null,
+          "rendered": "Welcome To The Game",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                replace={false}
+                to="/play/create"
+>
+                <button
+                                className="v-button new-button"
+                                type="button"
+                >
+                                NEW GAME
+                </button>
+</Link>,
+              <br />,
+              <Link
+                replace={false}
+                to="/play/join"
+>
+                <button
+                                className="v-button join-button"
+                                type="button"
+                >
+                                JOIN ROOM
+                </button>
+</Link>,
+            ],
+            "className": "button-area",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="v-button new-button"
+                  type="button"
+>
+                  NEW GAME
+</button>,
+                "replace": false,
+                "to": "/play/create",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NEW GAME",
+                  "className": "v-button new-button",
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "NEW GAME",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="v-button join-button"
+                  type="button"
+>
+                  JOIN ROOM
+</button>,
+                "replace": false,
+                "to": "/play/join",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "JOIN ROOM",
+                  "className": "v-button join-button",
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "JOIN ROOM",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        undefined,
+      ],
+      "type": "div",
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Welcome To The Game
+</h1>,
+            <div
+              className="button-area"
+>
+              <Link
+                            replace={false}
+                            to="/play/create"
+              >
+                            <button
+                                          className="v-button new-button"
+                                          type="button"
+                            >
+                                          NEW GAME
+                            </button>
+              </Link>
+              <br />
+              <Link
+                            replace={false}
+                            to="/play/join"
+              >
+                            <button
+                                          className="v-button join-button"
+                                          type="button"
+                            >
+                                          JOIN ROOM
+                            </button>
+              </Link>
+</div>,
+            undefined,
+          ],
+          "className": "col-md-4 offset-md-4 wrap-content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Welcome To The Game",
+            },
+            "ref": null,
+            "rendered": "Welcome To The Game",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  replace={false}
+                  to="/play/create"
+>
+                  <button
+                                    className="v-button new-button"
+                                    type="button"
+                  >
+                                    NEW GAME
+                  </button>
+</Link>,
+                <br />,
+                <Link
+                  replace={false}
+                  to="/play/join"
+>
+                  <button
+                                    className="v-button join-button"
+                                    type="button"
+                  >
+                                    JOIN ROOM
+                  </button>
+</Link>,
+              ],
+              "className": "button-area",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="v-button new-button"
+                    type="button"
+>
+                    NEW GAME
+</button>,
+                  "replace": false,
+                  "to": "/play/create",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "NEW GAME",
+                    "className": "v-button new-button",
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": "NEW GAME",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="v-button join-button"
+                    type="button"
+>
+                    JOIN ROOM
+</button>,
+                  "replace": false,
+                  "to": "/play/join",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "JOIN ROOM",
+                    "className": "v-button join-button",
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": "JOIN ROOM",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          undefined,
+        ],
+        "type": "div",
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing the NavBar Select Avatar should have Link 1`] = `
+ShallowWrapper {
+  "length": 0,
+  Symbol(enzyme.__root__): ShallowWrapper {
+    "length": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <SelectAvatar />,
+    Symbol(enzyme.__renderer__): Object {
+      "batchedUpdates": [Function],
+      "getNode": [Function],
+      "render": [Function],
+      "simulateEvent": [Function],
+      "unmount": [Function],
+    },
+    Symbol(enzyme.__node__): Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Select Your Avatar
+</h1>,
+          <div />,
+          <Link
+            replace={false}
+            to="/newgame"
+>
+            <button
+                        className="btn btn-danger"
+                        type="button"
+            >
+                        Find Your Room
+            </button>
+</Link>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Select Your Avatar",
+          },
+          "ref": null,
+          "rendered": "Select Your Avatar",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <button
+              className="btn btn-danger"
+              type="button"
+>
+              Find Your Room
+</button>,
+            "replace": false,
+            "to": "/newgame",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Find Your Room",
+              "className": "btn btn-danger",
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "Find Your Room",
+            "type": "button",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    Symbol(enzyme.__nodes__): Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Select Your Avatar
+</h1>,
+            <div />,
+            <Link
+              replace={false}
+              to="/newgame"
+>
+              <button
+                            className="btn btn-danger"
+                            type="button"
+              >
+                            Find Your Room
+              </button>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Select Your Avatar",
+            },
+            "ref": null,
+            "rendered": "Select Your Avatar",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="btn btn-danger"
+                type="button"
+>
+                Find Your Room
+</button>,
+              "replace": false,
+              "to": "/newgame",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Find Your Room",
+                "className": "btn btn-danger",
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Find Your Room",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    Symbol(enzyme.__options__): Object {
+      "adapter": ReactSixteenAdapter {
+        "options": Object {
+          "enableComponentDidUpdateOnSetState": true,
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__unrendered__): null,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): undefined,
+  Symbol(enzyme.__nodes__): Array [],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

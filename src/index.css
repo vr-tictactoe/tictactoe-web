@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   font-family: Cuprum;
+  height:100vh;
 }
 
 @font-face {
@@ -22,6 +23,12 @@ body h1 {
   font-family: CuprumBold;
 }
 
+.table.vr-table,
+.table.vr-table>th,
+.table.vr-table>td {
+  background-color: rgba(255, 255, 255, 0.32) !important;
+}
+
 .login-page {
   margin-top: 80px;
 }
@@ -35,8 +42,8 @@ body h1 {
 .v-button {
   margin-top: -15px;
   border-radius: 30px;
-  border: 0.6px solid #306fd9; 
-  font-family: CuprumBold; 
+  border: 0.6px solid #306fd9;
+  font-family: CuprumBold;
   font-size: 20px;
   background: #fff;
   color: #306fd9;
@@ -45,6 +52,53 @@ body h1 {
   align-self: center;
   text-decoration: none;
 }
+
+.waiting-button {
+  margin-top: -15px;
+  border-radius: 30px;
+  border: 0.6px solid #388E3C;
+  font-family: CuprumBold;
+  font-size: 20px;
+  background: #388E3C;
+  color: #fff;
+  width: 220px;
+  padding: 10px 0px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.waiting-button:hover,
+.waiting-button:focus {
+  background: #689F38;
+  border-color: #689F38;
+}
+
+
+
+.active-button {
+  margin-top: -15px;
+  border-radius: 30px;
+  border: 0.6px solid orange;
+  font-family: CuprumBold;
+  font-size: 20px;
+  background: orange;
+  color: white;
+  width: 220px;
+  padding: 10px 0px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.active-button:hover,
+.active-button:focus {
+  background: #FF5722;
+  border-color: #FF5722;
+}
+
+.active-button:focus {
+  outline: 0;
+}
+
 .v-button:focus {
   outline: 0;
 }
@@ -115,10 +169,10 @@ body h1 {
 }
 
 .back-button {
-  width: 40px; 
-  height: 40px; 
-  background-color: #fff; 
-  border-radius: 100%; 
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 100%;
   border: none;
   background-image: url('./assets/img/back.png');
   background-repeat: no-repeat;
@@ -180,7 +234,7 @@ body h1 {
 }
 
 .wrap-content {
-  margin-top: 30px;
+  margin-top: 150px;
   padding: 40px 15px 50px 15px;
 }
 
@@ -188,8 +242,15 @@ body h1 {
   font-size: 40px;
 }
 
+.have-list {
+  margin-top: 110px;
+}
+
 .loading {
   height: 400px;
+  align-self: center;
+  background-position: center;
+  margin-top: 200px;
 }
 
 .footer {
@@ -199,6 +260,7 @@ body h1 {
   font-size: 22px;
   color: #fff;
   padding: 2rem;
+  position: fixed;
 }
 
 .list-room {
@@ -230,10 +292,10 @@ body h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(47, 49, 168, 0.3); 
+  background-color: rgba(47, 49, 168, 0.3);
   border-radius: 20px;
 }
- 
+
 ::-webkit-scrollbar-button {
   display: none;
 }
@@ -274,16 +336,23 @@ body h1 {
 }
 
 .list-avatar {
+  display: flex;
   border: 2px solid #306ed9a6;
   border-radius: 10px;
   flex: 1;
   padding: 20px 0;
   background-color: rgba(183, 226, 253, 0.5);
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
   -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
   box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login-page {
+  margin-top: 60px;
 }
 
 .avatar-button {
@@ -315,10 +384,12 @@ div#navbarColor01 {
   color: #fff;
   width: 100px;
   background-color: rgb(255, 46, 46);
+  padding: 5px 0;
+  margin-top: 1px;
 }
 
 .avatar {
-  margin: 5px 10px; 
+  margin: 5px 10px;
 }
 
 .avatar-select {
@@ -342,15 +413,87 @@ div#navbarColor01 {
   font-size: 20px;
 }
 
-@media only screen and (min-device-width: 720px) {
-  .footer {
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 22px;
-    color: #fff;
-    padding: 2rem;
+header {
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
 
+#logo{
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background: url(./assets/img/single-logo.png) no-repeat center;
+	display: block;
+}
+
+nav {
+	float: right;
+	padding: 20px;	
+}
+
+.mdl-shadow--2dp {
+  background: none;
+  box-shadow: none;
+}
+
+.firebaseui-info-bar {
+  display: none;
+  margin-top: 20px;
+}
+
+div.mdl-progress::after {
+  display: block;
+  color: #fff;
+  content: "Authenticating";
+  margin: 20px auto;
+  text-align: center;
+}
+
+.mdl-progress {
+  height: 5px;
+}
+
+@media only screen and (max-width : 640px) {
+
+	header {
+		position: absolute;
+  }
+  
+  #logo{
+    display: none;
+  }
+
+	#menu-icon {
+		display:inline-block;
+  }
+  
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-page {
+    margin-top: 60px;
+  }
+  
+  .login-area {
+    padding-top: 40px;
+  }
+
+  .wrap-content {
+    margin-top: 60px;
+  }
+
+  .have-list {
+    margin-top: 70px;
+  }
+
+  .list-room {
+    margin-bottom: 10px;
   }
 }

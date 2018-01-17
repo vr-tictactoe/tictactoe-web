@@ -32,16 +32,19 @@ export default class CreateRoom extends Component {
         name: this.state.player.name,
         uid: this.state.player.uid,
         type: 'X',
-        avatar: this.state.player.avatar
+        avatar: this.state.player.avatar,
+        status: 'Not Ready'
       },
       player2: {
         name: '',
         uid: '',
         type: '',
-        avatar: ''
+        avatar: '',
+        status: 'Not Ready'
       },
       winner: '',
       turn: this.state.player.uid,
+      gameStatus: ''
     }
 
     let Key = await db.ref('games').push(newGame).key
