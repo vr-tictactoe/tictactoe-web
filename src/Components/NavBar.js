@@ -21,6 +21,12 @@ export default class NavBar extends Component {
     console.log(this.props)
   }
 
+  componentWillMount() {
+    if(!localStorage.getItem('uid')) {
+      window.location.href = '/login'
+    }
+  }
+
   render () {
     return (
       <div>
