@@ -33,8 +33,8 @@ export default class Welcome extends Component {
             <p style={{"font-family": "CuprumBold", fontSize: '30px'}}>LET'S PLAY THE GAME</p>
             <div>
               <button onClick={() => this.checkIsLogin()} type="submit" className='v-button play-button'>PLAY NOW</button><br />
-              <button onClick={() => this.props.history.push('/history')} type="submit" className='v-button history-button'>HISTORY</button>
-              <button onClick={() => this.props.history.push('/leaderboard')} type="submit" className='v-button history-button'>LEADERBOARD</button>
+              <button onClick={() => this.props.history.push('/history')} type="submit" className='v-button history-button'>HISTORY</button><br />
+              <button onClick={() => this.props.history.push('/leaderboard')} type="submit" className='v-button leader-button'>LEADERBOARD</button>
             </div>
           </div>
         </div>
