@@ -135,6 +135,7 @@ body h1 {
   background-position: left;
   background-size: contain;
   padding-left: 40px;
+  margin-top: 10px;
 }
 
 .play-button:hover {
@@ -160,6 +161,26 @@ body h1 {
 .history-button:hover {
   transition: ease-in-out 0.3s;
   background-image: url('./assets/img/history-white.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  -webkit-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+  box-shadow: 2px 2px 8px -2px rgba(0,0,0,1);
+}
+
+.leader-button {
+  margin-top: 10px;
+  background-image: url('./assets/img/leader.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding-left: 40px;
+}
+
+.leader-button:hover {
+  transition: ease-in-out 0.3s;
+  background-image: url('./assets/img/leader-white.png');
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -260,7 +281,7 @@ body h1 {
   font-size: 22px;
   color: #fff;
   padding: 2rem;
-  position: fixed;
+  position: inherit;
 }
 
 .list-room {
@@ -478,7 +499,7 @@ div.mdl-progress::after {
   }
 
   .login-page {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   
   .login-area {
@@ -495,5 +516,17 @@ div.mdl-progress::after {
 
   .list-room {
     margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .footer {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    font-size: 22px;
+    color: #fff;
+    padding: 2rem;
+    position: fixed;
   }
 }
